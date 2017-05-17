@@ -1,0 +1,35 @@
+CREATE TABLE Book
+(
+ISBN VARCHAR(13) NOT NULL,
+title VARCHAR(20) NOT NULL,
+edition VARCHAR(20) NOT NULL,
+year NUMERIC(4) NOT NULL,
+PRIMARY KEY (ISBN)
+);
+
+CREATE TABLE BookCopy
+(
+copyNo VARCHAR(20) NOT NULL,
+ISBN VARCHAR(13) NOT NULL,
+available VARCHAR(20) NOT NULL,
+PRIMARY KEY (copyNo),
+FOREIGN KEY (ISBN) REFERENCES Book(title)
+);
+
+CREATE TABLE Borrower
+(
+borrowerNo VARCHAR(20) NOT NULL,
+borrowerName VARCHAR(20) NOT NULL,
+borrowerAddress VARCHAR(20) NOT NULL,
+PRIMARY KEY (borrowerNo)
+);
+
+CREATE TABLE BookLoan
+(
+copyNo VARCHAR(20) NOT NULL,
+dateOut DATE NOT NULL,
+dateDue DATE,
+borrowerNo VARCHAR(20) NOT NULL,
+PRIMARY KEY (copyNo,dateOut),
+FOREIGN KEY (borrowerNo) REFERENCES Borrower(borrowNo)
+);

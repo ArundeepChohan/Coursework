@@ -1,0 +1,6 @@
+AuthType Digest
+AuthUserFile /home/CloakS16/.htpasswd2
+
+AuthName "Digest"
+
+require valid-user

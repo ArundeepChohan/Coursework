@@ -1,0 +1,34 @@
+CREATE TABLE Hotel
+(
+HotelNo VARCHAR(20) NOT NULL,
+HotelName VARCHAR(20) NOT NULL,
+City VARCHAR(20) NOT NULL,
+PRIMARY KEY (HotelNo)
+);
+
+CREATE TABLE Room
+(
+roomNo VARCHAR(20) NOT NULL,
+HotelNo VARCHAR(20) NOT NULL,
+roomType VARCHAR(20) NOT NULL,
+price NUMERIC(20) NOT NULL,
+PRIMARY KEY (roomNo,HotelNo)
+);
+CREATE TABLE Booking
+(
+HotelNo VARCHAR(20) NOT NULL,
+roomNo VARCHAR(20) NOT NULL,
+dateFrom DATE NOT NULL,
+dateTo DATE,
+guestNo VARCHAR(20) NOT NULL,
+PRIMARY KEY (HotelNo,roomNo,dateFrom)
+);
+
+CREATE TABLE Guest
+(
+guestNo VARCHAR(20) NOT NULL,
+guestName VARCHAR(20) NOT NULL,
+guestAddress VARCHAR(20) NOT NULL,
+PRIMARY KEY (guestNo,guestName)
+);
+

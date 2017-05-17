@@ -1,0 +1,15 @@
+{"property":[
+    {"address":"1001 street", "city":"burnaby" ,"bedroom":"1","bathroom":"2","type":"house","pet":"yes","price":"2000","image":""},
+    {"address":"1002 street", "city":"vancouver" ,"bedroom":"3","bathroom":"2","type":"apartment","pet":"yes","price":"1600","image":""},
+    {"address":"1003 street", "city":"richmond" ,"bedroom":"1","bathroom":"1","type":"basement","pet":"no","price":"900","image":""},
+    {"address":"1004 street", "city":"vancouver" ,"bedroom":"2","bathroom":"1","type":"basement","pet":"no","price":"1500","image":""},
+    {"address":"1005 street", "city":"richmond" ,"bedroom":"2","bathroom":"2","type":"house","pet":"yes","price":"1250","image":""},
+    {"address":"1006 street", "city":"burnaby" ,"bedroom":"4","bathroom":"3","type":"house","pet":"yes","price":"2200","image":""},
+    {"address":"1007 street", "city":"richmond" ,"bedroom":"1","bathroom":"1","type":"apartment","pet":"no","price":"950","image":""},
+    {"address":"1008 street", "city":"richmond" ,"bedroom":"3","bathroom":"1","type":"apartment","pet":"yes","price":"1550","image":""},
+    {"address":"1009 street", "city":"richmond" ,"bedroom":"3","bathroom":"2","type":"apartment","pet":"yes","price":"1600","image":""},
+    {"address":"1010 street", "city":"vancouver" ,"bedroom":"4","bathroom":"2","type":"house","pet":"yes","price":"1950","image":""},
+    {"address":"1011 street", "city":"burnaby" ,"bedroom":"3","bathroom":"2","type":"apartment","pet":"yes","price":"1400","image":""},
+    {"address":"1012 street", "city":"richmond" ,"bedroom":"2","bathroom":"2","type":"basement","pet":"yes","price":"1250","image":""},
+    {"address":"1013 street", "city":"vancouver" ,"bedroom":"3","bathroom":"1","type":"house","pet":"no","price":"1550","image":""}
+]}

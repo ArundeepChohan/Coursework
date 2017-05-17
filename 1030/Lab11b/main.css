@@ -1,0 +1,185 @@
+  /*==========  Mobile First Method  ==========*/
+          
+          /* Custom, iPhone Retina */
+          @media only screen and (min-width : 480px) {  
+				#container		  
+				{ 
+				
+			  width:100%;
+			  }
+              body
+			  {
+			  width:100%;
+			  }
+			  header
+			  {
+			 
+			  height:100px;
+			  width:100%;
+			  text-align:center;
+			  background-color:red;
+			  }
+			  main{
+			  width:100%;
+			  }
+			  
+			  
+			  aside
+			  {
+			   display: none;
+			  }
+			  nav div
+			  {
+			  display:none;
+			  }
+			  footer
+			  {
+			  height:100px;
+			  width:100%;
+			   text-align:center;
+			  background-color:red;
+			
+			  }
+			 nav{
+			
+		
+			  width:100%;
+			  background-color:green;
+			  text-align:center;
+			  }
+			
+			  li{
+			   
+			  display:inline;
+				
+			  }
+			  
+          }
+
+			
+          
+          
+          
+          /* Small Devices, Tablets */
+          @media only screen and (min-width : 768px) {
+		 
+			 			    body
+			  {
+			  width:100%;
+			  }
+			  #container
+			  { 
+			 
+			  width:700px
+			  }
+			  header
+			  {
+			  height:100px;
+			  width:100%;
+			  text-align:center;
+			  background-color:red;
+			  }
+			  main{
+			  float:left;
+			  width:80%;
+			  }
+			  
+			  aside
+			  {
+			  
+			 display: none;
+			  }
+			 
+			 
+			    nav{
+			
+				float:left;
+				width: 20%;
+				background-color:green;
+				text-align:center;
+				}
+				 nav div
+			  {
+			 
+			  display:inline;
+			  }
+				ul {
+				list-style-type: none;
+				
+				}
+
+				li a {
+				display: block;
+				}
+				footer
+			  {
+			  height:100px;
+			  width:100%;
+			   text-align:center;
+			  background-color:red;
+			  clear: both;
+			  }
+          }
+          
+          /* Medium Devices, Desktops */
+          @media only screen and (min-width : 992px) {
+             			    body
+			  {
+			  width:100%;
+			  }
+			  #container
+			  { 
+			 
+			  width:900px
+			  }
+			  header
+			  {
+			  height:100px;
+			  width:100%;
+			  text-align:center;
+			  background-color:red;
+			  }
+			  main{
+			  float:left;
+			  width:55%;
+			  }
+			  
+			  aside
+			  {
+			  float:left;
+			  width:20%;
+			 display: block;
+			  }
+			 
+			 
+			    nav{
+			
+				float:left;
+				width: 20%;
+				background-color:green;
+				text-align:center;
+				}
+				 nav div
+			  {
+			 
+			  display:inline;
+			  }
+				ul {
+				list-style-type: none;
+				
+				}
+
+				li a {
+				display: block;
+				}
+				footer
+			  {
+			  height:100px;
+			  width:100%;
+			   text-align:center;
+			  background-color:red;
+			  clear: both;
+			  }
+          }
+                                  
+        

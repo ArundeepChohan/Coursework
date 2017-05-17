@@ -1,0 +1,6 @@
+index.shtml document last modified <!--#flastmod file="index.shtml" -->
+<!--#if expr="${Chrome}" -->
+<p>Yes</p>
+<!--#else -->
+<a href ="https://www.google.com/chrome/browser/desktop/">Download Chrome</a>
+<!--#endif -->

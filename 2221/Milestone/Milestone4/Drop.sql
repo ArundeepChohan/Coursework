@@ -1,0 +1,10 @@
+DROP TABLE supervise;
+DROP TABLE staff;
+DROP TABLE staffPersonal;
+DROP TABLE department;
+DROP TABLE playsIn;
+DROP TABLE locatedIn;
+DROP TABLE server;
+DROP TABLE region; 
+DROP TABLE player;
+DROP TABLE playerPersonal;

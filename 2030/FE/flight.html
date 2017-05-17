@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+
+    $("#button").click(function(){
+		
+		var type =document.getElementById("txt1").value;
+console.log(type);
+		if((type == 1) || (type == 2))
+		{
+			if(type ==1)
+			{
+			assign(0,4);
+			}
+			else
+			{
+			assign(5,9);
+			}
+		
+		}
+		else
+		{
+		console.log("Improper input");
+		}
+		function stringToBoolean(string){
+		if(string=="true")
+		{
+		return true;
+		}
+		else{
+		return false;
+		}
+    }
+		
+function assign(low,high)
+{
+var textFile=[];
+var flightArray = new Array(10);
+var flag;
+var count;
+$.get("flight.txt", function(data){
+textFile=data.split('\n');
+console.log(textFile);
+document.getElementById("result").innerHTML=textFile;
+        });
+		
+ for (var i = 0; i < flightArray.length; ++i) { flightArray[i] = false; }
+ 
+for(var i=0;i<textFile.length;i++)
+		{
+		console.log(textFile[i]);
+            flightArray[i]=stringToBoolean(textFile[i]);
+		}
+		
+		console.log(flightArray);
+
+flag=false;
+count=low;
+while((count<=high)&&(flag==false)){
+if(flightArray[count]==false)
+{
+flightArray[count]=true;
+/*
+over write php
+
+*/
+
+
+console.log(count +" :Filled seat");
+console.log(flightArray[count]);
+console.log(flightArray);
+flag=true;
+}
+count+=1;
+console.log("Did it insert: "+flag);
+console.log("Index stopped:"+count);
+}
+$.post("flight.php",
+{saveToFile: flightArray},
+ function(data,status){
+ alert("Data: " + data + "\nStatus: " + status);
+});
+
+if(flag==false)
+{
+var answer=prompt("Let's check if the other seats are available","Yes/No");
+
+if (answer == "Yes") {
+low=(low == 0)? 4:0;
+high=(high == 4)? 9:4;
+   assign(low,high);
+}
+else{
+alert("Next flight leaves in 3 hours");
+
+}
+
+
+}
+
+}
+
+		
+    });
+	
+		
+    });
+
+  
+</script>
+<body>
+
+Please type 1 for First Class and 2 for Economy Class: <input type="text" name="type"id="txt1" />
+<input type="button" id="button"/>
+<p>Text File: <div id="result">..Result</div></p>
+
+
+</body>
+</html>

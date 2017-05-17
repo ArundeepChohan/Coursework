@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <title>Courses</title>
+	<script type="text/javascript">
+	var array=[];
+	var checkbox ="<input type='checkbox' name='checkbox'>";
+function start()
+{
+	//array.push(item_add());
+	//array.push(item_add());
+	//array.push(item_add());
+	constructTable();
+	
+}
+function SelectAll(source)
+{
+
+}
+function symbol(name)
+{
+console.log(document.getElementById(name).checked );
+if(document.getElementById(name).checked == true)
+{
+ return "&#10004;";
+}
+ return "&nbsp;";
+
+}
+function AddRecord()
+{
+	var number =document.getElementById("Number").value;
+	var title =document.getElementById("Title").value;
+	var subject =document.getElementById("Subject").value;
+	
+	var fall =symbol("Fall");
+	var spring =symbol("Spring");
+	var summer =symbol("Summer");
+	
+	if((!isNaN(number) && (number.length==4))&&(isNaN(subject)&&(subject.length==4)))
+	{
+	var row=
+{
+	Number:number,
+	Title:title,
+	Subject:subject,
+	Fall:fall,
+	Spring:spring,
+	Summer:summer,
+	Checkbox:checkbox
+};
+		array.push(row);
+		constructTable();
+	}
+	else
+	{
+	console.log("Wrong input");
+	}
+
+	
+	
+}
+
+function item_remove()
+{
+	checkboxes = document.getElementsByName('checkbox');
+	var count=0;
+	var remove=[];
+		for(var i in checkboxes)
+		{
+			if(checkboxes[i].checked == false)
+			{
+			remove.push(i);
+			}
+			count++;
+		}
+		
+		for(var i= remove.length-1;i>=0;i--)
+		{
+		array.splice(remove[i],1);
+		
+		}
+	constructTable();
+}
+
+function constructTable()
+{
+
+var table2 ="<table border='1' id='table'><tbody><tr><th><input type='checkbox' name='checkbox' onchange='SelectAll(this)'>select all</th><th>Subject</th><th>Number</th><th>Title</th><th>Fall</th><th>Spring</th><th>Summer</th></tr><tr id='new_item'><td><input type='button' value='Add' onclick='AddRecord()'></td><td><input type='text' id='Subject'></td><td><input type='text' id='Number'></td><td><input type='text' id='Title'></td><td><input type='checkbox' id='Fall'></td><td><input type='checkbox' id='Spring'></td><td><input type='checkbox' id='Summer'></td></tr>";
+for(var i =0;i<array.length;i++)
+	{
+table2+= "<tr>"+"<td>"+array[i].Checkbox+"</td>"+"<td>"+array[i].Subject+"</td>" +"<td>"+array[i].Number+"</td>" +"<td>"+array[i].Title+"</td>" +"<td>"+array[i].Fall+"</td>" +"<td>"+array[i].Spring+"</td>"+"<td>"+array[i].Summer+"</td>"  +"</tr>";
+}
+table2+="</tbody>"+"</table>";
+ document.getElementById("table").innerHTML=table2;
+
+
+}
+
+
+</script>
+</head>
+
+<body onload="start()">
+
+<h1>Courses</h1>
+
+<form action="ajax-add.php" method="post" onsubmit="do_it(this); return false">
+<table border="1" id="table">
+<!--
+<tbody>
+<tr>
+<th><input type="checkbox" name="checkbox"onchange="SelectAll(this)">select all</th>
+<th>Subject</th><th>Number</th><th>Title</th><th>Fall</th><th>Spring</th><th>Summer</th>
+</tr>
+
+<tr id="new_item">
+<td><input type="button" value="Add" onclick="AddRecord()"></td>
+<td><input type="text" id="Subject"></td>
+<td><input type="text" id="Number"></td>
+<td><input type="text" id="Title"></td>
+<td><input type="checkbox" id="Fall"></td>
+<td><input type="checkbox" id="Spring"></td>
+<td><input type="checkbox" id="Summer"></td>
+</tr>
+-->
+
+<!--
+<tr>
+<td><input type="checkbox"></td>
+<td>CPSC</td>
+<td>2261</td>
+<td>Web Technologies</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&#10004;</td>
+</tr>
+<tr>
+<td><input type="checkbox"></td>
+<td>ENGL</td>
+<td>1127</td>
+<td>Essay Writing and Short Prose Selections</td>
+<td>&#10004;</td>
+<td>&#10004;</td>
+<td>&#10004;</td>
+</tr>
+<tr>
+<td><input type="checkbox"></td>
+<td>MATH</td>
+<td>1171</td>
+<td>Calculus I</td>
+<td>&#10004;</td>
+<td>&#10004;</td>
+<td>&#10004;</td>
+</tr>
+-->
+</tbody>
+
+</table>
+<p><input type="button" value="Delete selected" onclick="item_remove()"></p>
+</form>
+</body>
+</html>

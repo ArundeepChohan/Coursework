@@ -1,0 +1,57 @@
+<!DOCTYPE  html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JS CardAgain</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+    <h1>CPSC 1045 - CardAgain demo</h1>
+
+    <div id="gameboard">
+      <button id="newgame-button">
+        New Game
+      </button>
+      <div class="controls deck">
+        <button id="deck-button">
+          <img src="media/cards/b.gif" alt="Deck">
+          <img id="deal-card" src="media/cards/b.gif">
+        </button>
+      </div>
+      <table class="controls cards">
+        <tr>
+          <td><img src="media/cards/b.gif" alt="##"></td>
+          <td><img src="media/cards/b.gif" alt="##"></td>
+
+        </tr>
+        <tr>
+          <td><img src="media/cards/b.gif" alt="##"></td>
+          <td><img src="media/cards/b.gif" alt="##"></td>
+        </tr>
+      </table>
+      <div class="clear-float"> </div>
+    </div>
+
+    <div id="rules">
+      <h2>Rules:</h2>
+      <p>
+        CardAgain is a demo that uses a "deck of cards" at its underlying model.
+      </p>
+      <ul>
+        <li>
+          Click on the deck to deal a card.
+        </li>
+        <li>
+          Click on a card to flip it over.
+        </li>
+      </ul>
+      <p>
+        It's just that simple.
+      </p>
+    </div>
+
+    <script src="js/cardagainGUI.js"></script>
+    <script src="js/cardagainApp-solution-lab12.js"></script>
+  </body>
+</html>

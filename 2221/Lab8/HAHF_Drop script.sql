@@ -1,0 +1,9 @@
+DROP TABLE cleaning;
+DROP TABLE staffmember;
+DROP TABLE apartment;
+DROP TABLE corpclient;
+DROP TABLE inspecting;
+DROP TABLE inspector;
+DROP TABLE managerphone; 
+DROP TABLE manager;
+DROP TABLE building; 

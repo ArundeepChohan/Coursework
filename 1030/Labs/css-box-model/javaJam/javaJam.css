@@ -1,0 +1,29 @@
+body{
+
+background-color:#ffffcc;
+text-color: #330000;
+font-family: Verdana;
+}
+h1{
+background-color #ccaa66;
+text-align:center;
+text-color: #000000;
+line height:200%;
+
+}
+div#nav{
+text-align:center;
+}
+footer
+{
+background-color #ccaa66;
+text-color: #000000;
+font-size: .60em;
+font-style:italic;
+text-align:center;
+}
+div#wrapper{
+text-align:center;
+margin-right:auto;
+margin-left:auto;
+}

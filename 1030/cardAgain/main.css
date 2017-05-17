@@ -1,0 +1,64 @@
+/*  Styles for the JS Matchismo */
+
+#gameboard {
+	border: solid 1px;
+	border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+    margin: auto;
+	position: relative;
+	width: 450px;
+}
+
+#gameboard h2 {
+	background-color:#444444;
+	color: white;
+	text-align: center;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+
+#newgame-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#gameboard .controls {
+	float: left;
+	margin: 40px 0;
+	width: 200px;
+}
+
+#gameboard .deck {
+	margin-left: 40px;
+	width: 120px;
+}
+
+#deal-card {
+	position:absolute;
+	left: 53px;
+    top: 45px;
+}
+
+#gameboard .cards  {
+	background-color: green;	
+}
+
+#gameboard .cards td {
+	cursor: pointer;
+	padding: 20px;
+	height: 110px;
+	width: 120px;
+}
+
+#gameboard .cards img{
+    visibility: hidden;
+}
+
+#rules {
+	font-size: 0.9em;
+}
+
+.clear-float {
+	clear: both;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">        
+	 	<title>Rise of Gallantmon</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$("h2").click(function(){
+					$("ul").slideToggle();
+				});
+			});
+		</script>
+		
+		<script>
+		<!-- If you want to know how to include audio into your program and how I did it -->
+			<!--https://www.developphp.com/video/JavaScript/Button-Sound-Effects-Tutorial-Audible-Menu-Systems -->
+		
+			var mouseClick = new Audio();
+			mouseClick.src="mouseClick.mp3";
+			mouseClick.volume = 1.0;
+			<!--http://soundbible.com/1773-Strong-Punch.html -->
+		
+			var equipment= new Audio();
+			equipment.src="equipment.mp3";
+			<!--http://soundbible.com/333-Cash-Register-Cha-Ching.html -->
+		
+			
+		</script>
+	</head>
+    
+	<body>
+
+		<div class="container-fluid">
+			<header id="top">
+			<div class="col-sm-12">
+				<h1>Rise of Gallantmon</h1>       
+			</div>			
+			</header>
+		
+			<section>
+			<div class="visible-md-block visible-lg-block">
+				<div class="col-md-2 col-lg-2">
+					<aside>
+						<nav>
+						<h2>Game Info</h2>
+						</nav>
+						<ul>
+							<!-- The section dealing with the background information of the game-->
+							<li><a href="pages/rules.html">Rules</a></li>
+							<li><a href="pages/character.html">Character Type</a></li>
+							<li><a href="pages/enemytype.html">Enemy Type</a></li>
+							<li><a href="pages/development.html">Developement</a></li>
+						</ul>
+				</div> 
+			</div>
+			  
+			<div class="col-sm-12 col-md-8 ">
+				<div class="container">
+					<!-- The section dealing with the scoreboard -->
+					<div id="popup">
+						<div id="popupBoxContent">
+						</div>
+					</div>
+
+					<div id="wrapper">
+					<!-- The section dealing with the timer -->
+						<div id="countdown_text">Timer</div>
+							<header id ="title"><b>The savior is Angemon</b></header>
+						<div id="gold">
+							<h1></h1>
+						</div>
+						<!-- The section dealing with the enemy selection -->
+						<div id="enemyType">
+							<button type="button" id="enemyType1" alt="A"value="0" />
+							<button type="button" id="enemyType2" alt="A"value="1"/>
+							<button type="button" id="enemyType3" alt="A"value="2"/>
+							<button type="button" id="enemyType4" alt="A"value="3"/>
+							<button type="button" id="enemyType5" alt="A"value="4"/>
+						</div>
+						<!-- The section dealing with the equipment -->
+						<div id="equipmentBar">
+							<table id="equipmentTable">
+								<tr><th> Click Dmg&nbsp;:&nbsp;</th><th id="clickDmg"></th></tr>
+									<tr id="tr1" >
+										<td><button type="button" onmousedown="equipment.play()"id="myFirstButton" value="10">Buy</button> </td>
+										<td><img id="claw" src=""width="50"height="50"  alt="Claw">Claw</td>
+									</tr>
+									<tr id="tr2">
+										<td><button type="button"  onmousedown="equipment.play()"id="mySecondButton" value="20">Buy</button> </td>
+										<td><img id="axe" src=""width="50"height="50" alt="Axe">Axe</td>
+									</tr>
+									<tr id="tr3">
+										<td><button type="button"  onmousedown="equipment.play()"id="myThirdButton" value="30">Buy</button> </td>
+										<td><img id="lance" src=""alt="Lance"width="50"height="50">Lance</td>
+									</tr>
+							</table>
+						</div>
+						
+						<div id="fightArea">
+							<div id="enemy">
+								<!-- The section dealing with the enemy click events -->
+								<img id="enemy-image" onmousedown="mouseClick.play()"src="enemy1.png" width="100"height="100" alt="Enemy">
+								<p id="hp"></p>
+							</div>
+							<script src="riseOfGallantmon.js"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="visible-md-block visible-lg-block ">
+				<div class="col-md-2 col-lg-2">
+					<aside>
+						<nav>
+							<h2>Contact Info</h2>
+						</nav>
+						<ul>
+							<!-- The section dealing with the makers of the game -->
+							<li>Name: Arundeep,Chohan, Hin Wong, Amandeep Chahal</li>
+							<li>Student# 100201711, 100256089,100270905 </li>
+							<li>Course# CPSC-1045</li>
+							<li>Section# 3</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+			</section>
+		</div>
+		<footer> <!-- Marking the footer section -->
+			Copyright 2016 - riseOfGallantmon<!-- Change the copyright notice -->
+		</footer>
+	</body>
+</html>

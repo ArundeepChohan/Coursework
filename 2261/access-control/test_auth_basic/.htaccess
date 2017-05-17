@@ -1,0 +1,4 @@
+AuthUserFile "/home/CloakS16/.htpasswd"
+AuthType Basic
+
+require valid-user

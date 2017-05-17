@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CPSC 1030 - Html5 List and Tables</title>
+		<meta charset="utf-8">
+		<style>
+		table, td, th 
+		{ 
+		border: 1px solid gray; 
+		}
+		</style>
+	</head>
+  
+	<body>
+		<h1> Fruits & Vegetables</h1>
+
+		<table>
+			<tr>
+				<th colspan ="2"><b>Peppers</b></th>
+				<th colspan ="2"><b>Apples</b></th>
+				<th colspan ="1"></th>
+			</tr>
+			<tr>
+				<td colspan ="2"><img src="images/greenpepper.jpg" alt ="GP"></td>
+				<td rowspan ="2"><img src="images/greenapple.jpg" alt ="GA"></td>
+				<td rowspan ="2"><img src="images/greenapple2.jpg" alt ="GA2"></td>
+				<td rowspan ="2"><b>Green</b></td>
+			</tr>
+			<tr>
+				<td colspan ="2"><img src="images/greenpepper2.jpg" alt ="GP2"></td>
+			</tr>
+			<tr>
+				<td><img src="images/redpepper.jpg" alt ="RP"></td>
+				<td><img src="images/redpepper2.jpg" alt ="RP2"></td>
+				<td colspan ="2" rowspan="2"><img src="images/redapple.jpg" alt ="RA"></td>
+					<td colspan ="1" rowspan="2"><b>Red</b></td>
+				</tr>	
+				<tr>
+					<td colspan ="2"><img src="images/redpepper3.jpg" alt ="RP3"></td>
+				</tr>
+		</table>
+	</body>		
+ </html>

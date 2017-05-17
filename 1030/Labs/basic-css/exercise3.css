@@ -1,0 +1,45 @@
+
+body
+{
+background-color:#E6E6FA;color:#191970;
+font-family:Arial,Verdana,sans-serif;
+}
+h1
+{
+background-color:#191970;
+color:#e6e6fa;
+line-height:200%;
+font-family:Georgia,"Times New Roman",serif;
+}
+h2
+{
+background-color:#aeaed4;
+color:#191970;
+}
+p 
+{ 
+font-size: .90em;
+text-indent: 3em;
+}
+ul 
+{ 
+font-weight: bold;
+}
+p, li 
+{ 
+font-size: 1em;
+}
+.feature 
+{ 
+color: #FF0000;
+}
+nav { font-weight: bold;
+font-size: 1.25em;}
+#footer { font-size: .80em; font-style: italic; text-align: center;}
+#footer a { color: #00ff00;}
+.companyname { font-weight: bold;
+font-family: Georgia,"Times New Roman", serif;
+font-size: 1.25em;}
+#wrapper { margin-left: auto;
+margin-right: auto;
+width: 80%;}

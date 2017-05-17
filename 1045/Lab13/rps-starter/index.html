@@ -1,0 +1,86 @@
+<!DOCTYPE  html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JS Rock-Paper-Scissors</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+    <h1>CPSC 1045 - Rock-Paper-Scissors Game</h1>
+
+    <div id="gameboard">
+      <div class="controls">
+        <h2>Throw your best Throw</h2>
+        <button id="rock-button" value="rock">
+          <img id="rock-image" src="media/rock.jpg" alt="ROCK" title="Rock">
+        </button>
+        <button id="paper-button" value="paper">
+          <img id="paper-image" src="media/paper.jpg" alt="PAPER" title="Paper">
+        </button>
+        <button id="scissors-button" value="scissors">
+          <img id="scissors-image" src="media/scissors.jpg" alt="SCISSORS" title="Scissors">
+        </button>
+      </div>
+      <div class="view">
+        <div class="player">
+            <h2>Human</h2>
+            <img id="human-throw" src="media/rock.jpg" >
+        </div>
+        <div class="leaderboard">
+            <div id="scoreboard">
+              <table>
+                <tr>
+                  <th>WINS</th>
+                  <th>TIES</th>
+                  <th>LOSES</th>
+                </tr>
+                <tr>
+                  <td id="human-wins">0</td>
+                  <td id="tie-games">0</td>
+                  <td id="computer-wins">0</td>
+                </tr>
+              </table>
+            </div>
+            <div id='message'>Welcome to RPS!</div>
+            <div id='history'>
+              <h2 class="title">History</h2>
+              <div class="entry"><div class="human tie">R</div><div class="computer tie">R</div></div>
+              <div class="entry"><div class="human lose">R</div><div class="computer win">P</div></div>
+              <div class="entry"><div class="human win">R</div><div class="computer lose">S</div></div>
+            </div>
+        </div>
+        <div class="player">
+          <h2>Computer</h2>
+          <img id="computer-throw" src="media/rock.jpg">
+        </div>
+      </div>
+      <div class="clear-float"></div>
+    </div>
+    
+    <div id="rules">
+      <h2>Rules:</h2>
+      <p>
+        RPS is a game of chance - see if you can beat the computer.
+      </p>
+      <ul>
+        <li>
+          Choose a "throw" - Rock, Paper, or Scissors
+        </li>
+        <li>
+          The computer will throw simultaneously (promise - we're not cheating!)
+        </li>
+        <li>
+          Rock beats Scissors;  Scissors beat Paper;  Paper beats Rock
+        </li>
+      </ul>
+      <p>It's just that simple.</p>
+    </div>
+		<div id="footer"> 
+		   <a href='license.txt'>Open-Source Software</a>  
+			Copyright <a href='https://github.com/powderflask/'>powderflask</a> 2015 
+		</div>
+    <script src="js/rpsGUI.js"></script>
+    <script src="js/rpsApp.js"></script>
+  </body>
+</html>

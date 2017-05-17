@@ -1,0 +1,115 @@
+/*  Styles for the JS RPS */
+
+#gameboard {
+	border: solid 1px;
+	border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+    margin: auto;
+	width: 650px;
+}
+
+#gameboard h2 {
+	background-color:#444444;
+	color: white;
+	text-align: center;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+
+#gameboard .controls {
+	margin: auto;
+	text-align: center;
+	width: 300px;
+}
+
+#gameboard .controls h2 {
+	font-size: 1.2em;
+}
+
+#gameboard .controls button {
+	cursor: pointer;
+	margin: 0 10px;
+}
+#gameboard .controls button img {
+	width: 50px;
+}
+
+#gameboard .view {
+	margin: 20px auto;
+	width: 602px;
+}
+#gameboard .player, #gameboard .leaderboard {
+	float: left;
+	margin: auto;
+}
+
+#gameboard .player {
+	text-align: center;
+	width: 200px;
+}
+
+
+#gameboard .leaderboard {
+	min-height: 300px;
+}
+
+#scoreboard table {
+	border-spacing: 10px 0;
+}
+#scoreboard table td {
+	border: 1px solid #888888;
+	font-size: 1.2em;
+	text-align: center;
+	width: 50px;
+}
+
+#message {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#history {
+	margin: auto;
+	width: 70%;
+}
+
+#history h2.title {
+	font-size: 0.9em;
+}
+
+#history .entry {
+	clear: both;
+}
+
+#history .entry div {
+	border: 1px dashed #888888;
+	margin-bottom: 5px;
+	padding: 3px;
+}
+#history .entry .human {
+	float: left;
+}
+#history .entry .computer {
+	float: right;
+}
+
+#history .entry .win {
+	border: 2px solid green;
+}
+#history .entry .lose {
+	border: 1px solid red;
+}
+
+#rules {
+	font-size: 0.9em;
+}
+
+#footer {
+	font-size: 0.9em;
+	margin: 20px;
+	text-align: center;
+}
+
+.clear-float {
+	clear: both;
+}

@@ -1,0 +1,57 @@
+<html>
+    <head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+	 $(document).ready(function() {
+
+	     $("#Mr").click(function() {
+		 
+		 // we first retrieve the input box value
+		 // into a variable called userName
+		 var userName = $("#usr").val();
+		 
+		 // We display the greeting by combining 2 strings together
+		 // we replace the HTML inside the #output with our own
+		 // custom greeting
+		 $("#output").html("Hello Mr. "+userName);
+		 
+	     });	     
+		 
+		$("#Mrs").click(function() {
+		 var userName = $("#usr").val();
+		 $("#output").html("Hello Mrs. "+userName);
+		 
+	     });
+		 
+		  $("#Miss").click(function() {
+		 var userName = $("#usr").val();
+		 $("#output").html("Hello Miss. "+userName);
+		 
+	     });
+	     
+	 });
+	</script>
+	<style>
+	 div {
+	     margin: 10px;
+	 }
+	</style>
+    </head>
+    <body>
+	<div class="container">
+	    <div class="form-group">
+		<label for="usr">Name:</label>
+		<input type="text" class="form-control" id="usr">
+	    </div>
+	    <div>
+		<label class="radio-inline"><input type="radio" name="optradio" id="Mr">Mr.</label>
+		<label class="radio-inline"><input type="radio" name="optradio" id="Mrs">Mrs.</label>
+		<label class="radio-inline"><input type="radio" name="optradio" id="Miss">Miss</label>
+	    </div>
+	    <div id="output">
+	    </div>
+	</div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+
+body {
+	background-image: url("background.jpg");
+}
+/* Some css classes that are inserted by the javascript */
+          
+          /* The history_row_* classes are inserted into the history_display
+             div.  The classes alternate so we can have different style for
+             each row, creating a nice visual effect.
+            */
+          .history_row_0 {
+              background-color: #cccccc;
+          }
+          
+          .history_row_1 {
+              background-color: #dddddd;
+          }
+          
+          /* Every time a location changes.  It will change the status_display
+             div so that when an update happens, the class will change to 
+             location_change, and change to location_not_change after 1 second.
+             */
+          .location_change {
+              background-color: red;
+          }
+          
+          .location_not_change {
+              
+          }          
+ ul{ 
+ list-style-type:none;
+background-color:#f3f3f3;
+ 
+ }
+ 
+ li{
+ 
+ color:#606060;
+ }
+ 
+ li:hover{
+	color:#d0d0d0;
+ }
+
+ p {
+    background: #dad;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+h1{
+text-align:center;
+margin-left:-10px;
+}
+
+          /* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+
+ }
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }

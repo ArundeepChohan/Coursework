@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     
+        <script type="text/javascript">
+    
+
+
+          // The javascript here will dynamically update the webpage, 
+          // insert history data as well as changing the status indicator
+          $(document).ready(function(){              
+              websocket = new WebSocket("ws://52.8.142.239:8443");
+              websocket.onopen = function(evt) { console.log(evt) };
+              websocket.onclose = function(evt) { console.log(evt) };
+              var messageNum = 0;
+		
+              websocket.onmessage = function(evt) { 
+                  console.log(evt);
+                  $.get("http://52.8.142.239/map", function(data, status) {
+                      console.log(data);
+					    $("#googlemap").attr("src","https://www.google.com/maps/embed/v1/place?key=AIzaSyBqqdGsaT_t3kn1GaPGFxOmcKh5u7xWQgw&zoom=8&q="+data[1]+','+data[0]);
+               
+                      	  $("#status_display")
+                          .addClass("location_change")
+                          .removeClass("location_not_change");
+                     
+                       $("#history_display")
+                          .prepend("<div class='history_row_"+(messageNum++%2)+"'>"+data+"</div>");
+                      setTimeout(function() {
+                          $("#status_display")
+                              .addClass("location_not_change")
+                              .removeClass("location_change");
+                      }, 1000);
+				
+                    
+                  });
+             
+             
+          }; 
+         
+     websocket.onerror = function(evt) { console.log(evt) };
+});
+
+        </script>
+		
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+			
+        </style>
+    </head>
+    <body>    
+        
+       <ul>
+<div class="container">
+
+
+ <h1>Tracking Dashboard</h1>
+<div class="col-lg-4">
+ <ul class="nav nav-tabs">
+ <li><a id ="arun"data-toggle="tab" href="#intro">
+<i class="fa fa-home"></i>&nbsp;Introduction</a></li>
+</div>
+<div class="col-lg-4">
+ <li><a id ="arun" data-toggle="tab" href="#map">
+<div id="status_display" class="location_not_change"><i class="fa fa-street-view"></i>&nbsp; Live map</a></li>
+</div>
+<div class="col-lg-4">
+<li><a id ="arun" data-toggle="tab" href="#history">
+<i class="fa fa-history"></i> History</a></li>
+</div>
+ 
+</ul>
+  <div class="tab-content">
+  
+  <div id="intro" class="tab-pane fade in active">
+  <div id="intro_display">
+	  <div id="inner">
+            <p>
+                This is a bare bones HTML page that connects with a backend server
+                to simulate real-time location tracking.  When the webpage receives
+                a notification from the server that a location has changed, the status
+                is changed for 1 second, and the map location is also changed.
+            </p>                    
+            <p>
+                Your job is to make this site looks great by using CSS and
+                include appropriate graphics/icons. You are free
+                to use any tools or frameworks that is familiar to you.
+            </p>
+        </div>
+        </div>
+		</div>
+	 <div id="map" class="tab-pane fade">
+        <div id="map_display">
+            <iframe                     
+                 id="googlemap"
+                 width="300"
+                 height="240"
+                 frameborder="0" style="border:0"
+                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBqqdGsaT_t3kn1GaPGFxOmcKh5u7xWQgw&q=49,-122&zoom=8" allowfullscreen>
+            </iframe>                                                
+        </div>
+		</div>
+		
+		 <div id="history" class="tab-pane fade">
+  <div id="history_display">
+            <!-- location history will be added dynamically -->
+        </div>
+        
+
+ </div>
+ </div>
+        
+    </body>
+</html>

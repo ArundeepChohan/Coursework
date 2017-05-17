@@ -1,0 +1,52 @@
+<!DOCTYPE  html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+	<title>JS Craps</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body> 
+  	<h1>CPSC 1045 - Craps Game</h1>
+  	
+  	<div id="gameboard">
+  		<div class="dice">
+  			<img id="players-dice1"> 
+  			<img id="players-dice2">
+  		</div>
+  		<div class="controls">
+  			<button id="roll-button">Roll em!</button>
+  			<button id="newgame-button">New Game</button>
+  		</div>
+  		<div id='message'></div>
+  	</div>
+  	
+  	<div id="rules">
+		<h2>Rules:</h2>
+		<p>The Game of Craps is played by a single player with two dice.<br>
+		   The game starts by rolling the pair of dice - from this first roll, there are 3 possible outcomes:</p>
+		<ol>
+		  <li>If the total of the two dice is 7 or 11, you WIN.</li>
+		  <li>If the total is 2, 3, or 12, you LOSE. </li>
+		  <li>Otherwise, the total of the first roll is known as your <em>point</em>, <br>
+		  	  and you must roll again and again until either...
+			<ul>
+			  <li>you roll a 7 --> and LOSE, or...</li>
+			  <li>your roll your point --> and WIN</li>
+			</ul>
+		  </li>
+		</ol>
+	</div>
+	<div id="dice-images"> <!-- this is a trick to get browser to pre-load the images for us -->
+		<img id="die1" src='media/die1.gif'>
+		<img id="die2" src='media/die2.gif'>
+		<img id="die3" src='media/die3.gif'>
+		<img id="die4" src='media/die4.gif'>
+		<img id="die5" src='media/die5.gif'>
+		<img id="die6" src='media/die6.gif'>
+	</div>
+	
+	<script src="js/crapsGUI.js"></script>
+	<script src="js/crapsApp.js"></script>
+  </body>
+</html>

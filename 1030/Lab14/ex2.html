@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+	 $(document).ready(function() {
+
+	     $("#add").click(function() {
+		 // We are appending a new image into the row class, noticed
+		 // how we are using single quotes in the html because the entire
+		 // code has to be inside a double quote.
+		  var color = $("#color").val();
+		  
+		 $(".row").append("<img class='thumbnail col-md-4' src=http://placehold.it/300/"+color+"/>");
+	     });
+
+	     $("#clear").click(function() {
+		 // Clear the content of the row
+		 // HINT: assign the content to an empty string (i.e. "")
+		  $(".row").html("");
+	     });
+	     
+	 });
+	</script>
+	<style>
+	 div {
+	     margin: 10px;
+	 }
+	</style>
+    </head>
+    <body>
+	<div class="container">
+
+	    <div class="form-group">
+		<label for="color">Hex Color:</label>
+		<input type="text" class="form-control" id="color">
+		<button id="add">Add Image</button>
+		<button id="clear">Clear</button>		
+	    </div>		
+	    
+	    <div class="row">		
+	    </div>
+	    
+	</div>
+    </body>
+</html>

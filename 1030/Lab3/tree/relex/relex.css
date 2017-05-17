@@ -1,0 +1,9 @@
+/* CSS will NOT be part of Lab Quiz 1.  */
+h1  {font: 20px Verdana, sans-serif; padding: 15px;}
+h2  {font:  9px Verdana, sans-serif; padding:  6px;}
+p   {font: 13px Verdana, sans-serif; padding: 10px;}
+a   {font: 72px Verdana, sans-serif; padding: 24px;}
+h1, h2, p, a { text-align: center;}
+
+/* images and anchors will display on their own line, centered. */
+a, img {display: block; margin-left:auto; margin-right:auto;}

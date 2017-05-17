@@ -1,0 +1,4 @@
+DROP TABLE Hotel;
+DROP TABLE Room;
+DROP TABLE Booking;
+DROP TABLE Guest;

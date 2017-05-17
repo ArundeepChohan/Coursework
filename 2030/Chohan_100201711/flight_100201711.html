@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Arundeep Chohan -100201711</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div id="table">..Result</div>
+
+Name:<input type="text" name="name" id="name" >
+Seat#: <input type="text" name="seat" id="seat" >			
+<select id="type">
+   <option value="500">Economy</option>
+   <option value="1250"> FirstClass</option>
+  </select><br><br>			
+
+Price: <input type="text" name="price"id="price" >
+<input type="button" id="Submit" value="Submit">
+<input type="button" id="Display" value="Display">
+<div id="result">..Result</div>
+<script>
+
+var temp2="<table>";
+for(var i=0;i<8;i++)
+{
+temp2+="<td>"+"<td>";
+}
+temp2+="</table>";
+
+
+</script>
+<p id="legend">
+Legend: 
+<p id="body">
+<p id="firstC">--</p>First Class:
+<p id="ecoC">--</p>Economy Class:
+<p id="lav">--</p>Lavatory:
+<p id="exitRow">--</p>Exit Row
+Exit
+</p>
+</p>
+
+
+<div>
+Basically submit one with correct values and then click display.
+</div>
+
+<script>
+
+$(document).ready(function(){
+
+var textFile;
+
+    $("#Submit").click(function(){
+	
+	
+	
+	
+$.post("flight_100201711.php",
+{
+Name: document.getElementById("name").value,
+Seat: document.getElementById("seat").value,
+Type: document.getElementById("type").value,
+Price: document.getElementById("price").value,
+},
+ function(data,status){
+ alert("Data: " + data + "\nStatus: " + status);
+});
+
+$("#Display").click(function(){
+$.get("flight_100201711.txt", function(data){
+textFile=data.split('\n');
+console.log(textFile);
+var temp="";
+for(var i =0;i<textFile.length;i=i+4)
+{
+temp+=textFile[i]+"<br>";
+temp+=(textFile[i+2]*textFile[i+3])+"<br>";
+temp+=textFile[i+1]+"<br>";
+
+}
+document.getElementById("result").innerHTML=temp;
+        });
+
+});
+});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<style>
+		div.img img {
+		height: 200px;
+		weight: 200px;
+		}
+
+		div.img {
+		border: solid 1px black;
+		margin-bottom: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+}
+	</style>
+ <script type="text/javascript">
+        </script>	
+		</script>
+		<style type="text/css">	 
+		/*
+		 .row 
+		 {
+		border: 1px solid black;
+		 }
+		 */
+		#post_ID{ display:none; }
+		</style>
+		</head>
+<body onLoad="ajaxWay2()">
+
+
+<div class="container-fluid">
+	<div class="row">
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+		<li><a data-toggle="tab" href="#login">Login</a></li>
+		<li id="post_ID"><a data-toggle="tab" href="#post">Post</a></li>
+	</ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+	  
+	  <script>
+            function ajaxWay2() {
+               // syntax: $.post(URL,data,callback);
+               $.post("housesDb.php",
+                    {
+                        bedroomPostp: $("#bedroom").val(),
+                        bathroomPostp: $("#bathroom").val(),
+			   typePostp: $("#type").val(),
+		          petPostp: $("#pet").val()
+                    }
+                    , display2
+                );
+             
+            }
+            
+            function display2(dataFromtheServer2) {
+               
+                $("#result1").html(dataFromtheServer2);
+            }
+        
+        </script>
+	  
+
+		<div class="col-sm-12">
+        <div class="col-sm-2">
+		<form method="post" class="col-sm-12"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+			
+			 <select id="bedroom">
+               		<option value="0">1+ Bedroom</option>
+               		<option value="1">2+ Bedrooms</option>
+            		</select><br><br>
+			
+			<select id="bathroom">
+                		<option value="0">1+ Bathroom</option>
+                		<option value="1">2+ Bathrooms</option>
+            		</select><br><br>			
+
+			<select id="type">
+                		<option value="Basement">Basement</option>
+	`			<option value="House">House</option>
+            		</select><br><br>
+			
+			<p>Pets Allowed</p>
+			<select id="pet">
+               		<option value="No">No</option>
+                		<option value="Yes">Yes</option>
+            		</select><br><br>
+
+
+		</form>
+		<button onClick="ajaxWay2()">Get Value</button>
+
+
+		</div>
+
+                <div class="col-sm-8">
+				<div class="col-sm-4"></div>
+			
+		
+			<div class="col-sm-12 ">
+			<table id="result1">
+				<thead>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			</div>
+				
+		
+			</div>
+			<div class="col-sm-2"></div>
+			</div>
+	
+    </div>
+    <div id="login" class="tab-pane fade">
+      <h3>Login</h3>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+
+            function ajaxWay() {
+               // syntax: $.post(URL,data,callback);
+               $.post("loginDb.php",
+                    {
+                        name: $("#login2").val(),
+                        pwd: $("#pwd").val()
+                    }
+                    , display
+                );
+             
+            }
+			
+			function ajaxWay3(){
+			 // syntax: $.post(URL,data,callback);
+               $.post("insertDb.php",
+                    {
+                        address: $("#address").val(),
+						bedroom: $("#postbedroom").val(),
+						bathroom: $("#postbathroom").val(),
+						type: $("#posttype").val(),
+                        pet: $("#postpet").val(),
+						price: $("#postprice").val(),
+						img: $("#postimg").val()
+
+                    }
+                    , display
+                );
+			}
+
+            function clearFunc(){
+
+                document.getElementById("address").value="";
+                document.getElementById("postbedroom").value="";
+                document.getElementById("postbathroom").value="";
+                document.getElementById("posttype").value="";
+                document.getElementById("postpet").value="";
+                document.getElementById("postprice").value="";
+                document.getElementById("postimg").value="";
+
+                document.getElementById("posted").innerHTML = "Thanks for posting!";
+
+                $(document).ready(function() { 
+                setTimeout(function() { 
+                    document.getElementById("posted").innerHTML = "";
+                  }, 1000); 
+                });
+            }
+
+            function display(dataFromtheServer) {
+                
+				if(dataFromtheServer === '1'){
+				document.getElementById("post_ID").style.display = "block";
+				}
+				if(dataFromtheServer === '2'){
+				document.getElementById("post_ID").style.display = "block";
+				}
+				if(dataFromtheServer === '3'){
+				document.getElementById("post_ID").style.display = "block";
+				}
+				console.log(dataFromtheServer + " = dataFromtheServer");
+            }
+      
+
+		</script>
+		
+		
+        Login : <input type="text" id="login2"><p></p>
+        Password : <input type="password" id="pwd"><p></p>
+        <button onclick="ajaxWay()">Login</button><p></p>
+        <div id="result">
+           
+        </div>
+  
+</div>
+
+  <div id="post" class="tab-pane fade">
+      <h3>Menu 2</h3>
+			Address : <input type="text" id="address"><p></p>
+			Bedroom : <input type="text" id="postbedroom"><p></p>
+			Bathroom : <input type="text" id="postbathroom"><p></p>
+			Type (Apartment/House): <input type="text" id="posttype"><p></p>
+			Pet Friendly (Yes/No): <input type="text" id="postpet"><p></p>
+			Price : <input type="text" id="postprice"><p></p>
+			IMG (URL) : <input type="text" id="postimg"><p></p>
+        <button onclick="ajaxWay3();clearFunc();">Post</button><p></p>
+        <div class="wrap">
+            <p id="posted"></p>
+        </div>
+        <div id="result">
+    </div>
+  
+  </div>
+</div>
+			
+	</body>
+</html>

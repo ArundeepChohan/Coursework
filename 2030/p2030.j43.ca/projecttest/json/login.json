@@ -1,0 +1,5 @@
+{"property":[
+    {"name":"admin", "password":"123456" ,"email":"admin@test.com","permissions":"1"},
+    {"name":"subscriber", "password":"sub123" ,"email":"sub@test.com","permissions":"2"},
+    {"name":"user", "password":"user123" ,"email":"user@test.com","permissions":"3"}
+]}

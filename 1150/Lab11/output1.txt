@@ -1,0 +1,9 @@
+A JAVA String contains an immutable sequence of Unicode characters. 
+
+Unlike C/C++, where string is simply an array of char, A JAVA String is an object of the class Object.
+
+JAVA String is, however, special. Unlike an ordinary class.
+
+Refer to the JAVA API for complete listing.
+
+

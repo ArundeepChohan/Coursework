@@ -1,0 +1,296 @@
+ section,header,footer,nav,aside,h1,h2,p,ul,li
+ { 
+margin: 0;
+padding: 0;
+}
+html {
+padding: 0;
+margin: 0;
+}
+/*Picture found on google*/
+/* How to create rounded corners http://www.w3schools.com/css/css3_borders.asp*/
+ nav {
+color:white;
+border-radius:3em;
+margin: 0 -1em;
+padding: 20px;
+background-image: url(armTattoo.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+ul{
+color:white;
+}
+li{
+list-style-type: none;
+}
+
+li  a{
+color:white;
+}
+/* Resizing enemy while over it*/
+#enemy-image:hover{
+width:60%;
+}
+/* Resizing links while over it*/
+a:hover{
+font-size:200%;
+text-decoration:none;
+}
+
+/*
+Picture found on google
+*/
+#top {
+background: url(gallHeader.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+/*Header Stylings*/
+/*
+Picture found on google
+*/
+#top h1{
+background: url(gallHeader.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+text-align:left;
+color:yellow;
+padding:20px;
+}
+            
+/* Footer styling: */
+footer{
+text-align:center;
+font-size:0.825em;
+background-color:black;
+color:yellow;
+}
+
+footer p{
+position:relative;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { 
+
+}
+body{
+background-color:black;
+}
+#wrapper{
+}
+/*
+Picture found on google
+*/
+.container{
+color: white;
+background-color: white;
+background-image: url("digiMonBg.jpg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+border:3px solid black;
+
+}
+.container-fluid{
+background-color:black;
+}
+
+#title{
+text-align:center;
+
+}
+/*
+Picture found on google
+*/
+#countdown_text
+{
+border:3px solid black;
+background-image: url("tableBg.jpg");
+width:100px;
+}
+/*
+Picture found on google
+*/
+#gold{
+background-image: url("tableBg.jpg");
+float:left;
+border-style:solid;
+margin-left:10%;
+margin-top:5%;
+width:20%;
+height:10%;
+border:3px solid black;
+}
+/*
+Picture found on google
+*/
+#equipmentBar{
+background-image: url("tableBg.jpg");
+
+clear:left;
+border-style:solid;
+float:left;
+margin-left:10%;
+margin-top:5%;
+width:20%;
+height:40%;
+border:3px solid black;
+}
+
+#equipmentTable
+{
+border-style:none;
+}
+/*
+Picture found on google
+*/
+#enemyType{
+background-image: url("tableBg.jpg");
+float:left;
+border-style:solid;
+margin-left:20%;
+margin-top:5%;
+width:20%;
+height:10%;
+border:3px solid black;
+
+}
+#fightArea{
+float:left;
+border-style:solid;
+margin-left:20%;
+margin-top:5%;
+width:20%;
+height:40%;
+border:none;
+text-align:center;
+}
+/*The hp bar which appears under the enemy*/
+/*
+Picture found on google
+*/
+
+#hp
+{
+border:3px solid black;
+background-image: url("tableBg.jpg");
+}
+#myFirstButton
+{
+color: black;
+margin-top:10px;
+margin-bottom:10px;
+padding-top:1em;
+padding-bottom:1em;
+margin-left:10px;
+border:3px solid #142830;
+}
+#mySecondButton
+{
+color: black;
+margin-top:10px;
+margin-bottom:10px;
+padding-top:1em;
+padding-bottom:1em;
+margin-left:10px;
+border:3px solid #142830;
+}
+#myThirdButton
+{
+color: black;
+margin-top:10px;
+margin-bottom:10px;
+padding-top:1em;
+padding-bottom:1em;
+margin-left:10px;
+border:3px solid #142830;
+}
+#tr1{
+	
+}
+#tr2{
+
+}
+#tr3{
+	
+}
+
+#tr1:hover{
+background-color:grey;
+}
+#tr2:hover{
+background-color:grey;
+}
+#tr3:hover{
+background-color:grey;
+}
+
+/*How far the imgs of the equipment move from the left*/
+.lance{
+margin-left:250%;
+}
+.claw{
+margin-left:250%;
+}
+.axe{
+margin-left:250%;
+}
+
+#enemyType
+{
+
+}
+/*Size of the button*/
+#enemyType button{
+width:50px;
+height:55px;
+
+}
+/*
+Pictures found on google and edited in gimp2
+*/
+#enemyType1{
+ background-image: url("enemy1s.png");
+}
+#enemyType2{
+ background-image: url("enemy2s.png");
+}
+
+#enemyType3{
+ background-image: url("enemy3s.png");
+}
+#enemyType4{
+
+ background-image: url("enemy4s.png");
+}
+#enemyType5{
+ background-image: url("enemy5s.png");
+}
+#rules,#developement,#aboutEnemy,#character{
+color:white;
+background-color:black;
+text-align:center;
+}
+/*A simple css for a scoreboard page this is a very common setup for a popup page with a black background https://jsfiddle.net/thenexus77/d1xfnpLq/ */
+#popup
+{
+top: 0; 
+left: 0; 
+position: fixed; 
+width: 100%; 
+height: 120%;
+background-color: rgba(0,0,0,0.7); 
+display: none;
+}

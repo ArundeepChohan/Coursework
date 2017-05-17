@@ -1,0 +1,24 @@
+<div class="page-header">
+	<h3>Contact</h3>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#advance").click(function() {
+				fetchData();
+			});
+		});
+		function fetchData() {
+			$.ajax({
+				url: "/resource", 
+				type: "PUT",
+				contentType: 'application/json',
+				data: JSON.stringify({name: "Test name"}),
+				success: function(result) {
+					$("#result").html(result.name);
+				}
+			});
+		}
+	</script>
+	<button id="advance">Advance</button>
+	<div id="result"></div>
+</div> 

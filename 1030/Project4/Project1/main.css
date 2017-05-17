@@ -1,0 +1,83 @@
+			body {
+				background-image: url("background.jpg");
+				
+			}
+      
+         /* Each of the history row, when inserted, will be given 
+             class that alternates between _0 and _1 */
+          .history_row_0 {
+          }
+
+          .history_row_1 {
+          }
+
+          /* When a location change is detected, the status_display
+             div will switch between the following classes */
+          .location_change {
+              background-color: red;
+          }
+
+          .location_not_change {
+              background-color: green;
+          }
+
+          /* the menu classes to help us customize the look
+             of the menu items.  The menu items show/hide the
+             various sections of the site */
+          
+
+          #menu>ul {
+		  list-style-type:none;
+		 
+          }
+		  
+			
+		
+			 #intro{border:1px solid;}
+			 #map{border:1px solid;}
+			 #history{border:1px solid;}
+		
+          /* Make the menu items not selectable */
+          .menuItem {
+              -webkit-touch-callout: none;
+              -webkit-user-select: none;
+              -khtml-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+          }
+
+
+
+          /* Small Devices, Tablets */
+          @media only screen and (min-width : 480px) {
+           
+          }
+          
+          /* Medium Devices, Desktops */
+          @media only screen and (min-width : 1000px) {
+		   
+			 #menu >ul li{
+			   float: left;
+			   /*text-align:center;*/
+			   
+				
+			  }
+			  
+			#intro{
+			margin-left:20%;
+			}
+			 #map{
+			margin-left:20%;
+			 }
+			 #history{
+			 margin-left:20%;
+			
+			 }
+			#content{
+			float:left;
+			width:1000px;
+			
+			}
+             
+          }

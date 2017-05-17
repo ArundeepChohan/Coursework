@@ -1,0 +1,66 @@
+<!-- 
+Create a DTD for a "product" where a product has a title, description, country of origin, and manufacturer. Each manufacturer has a name, postal code, city, province or state, street address and optionally a phone #.
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE note [
+<!ELEMENT product (title,manufacturer,description,origin)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT origin (#PCDATA)>
+<!ELEMENT manufacturer (name,postal,city,province,street,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT postal (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT province (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+]>
+<note>
+  <title>Product</title>
+  <description>stuff</description>
+	<country>Canada</country>
+	<manufacturer>bob</manufacturer>
+	
+
+	<name>Log</name>
+  
+	<postal> ssss</postal>
+	<city>Van</city>
+	<province>BC</province>
+	<street>12323</street>
+	<phone></phone>
+</note>
+-->
+
+
+<meta http-equiv="content-type" 
+		content="text/html;charset=utf-8" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" standalone="yes"?>
+
+<!ELEMENT product (title,manufacturer,description,origin)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT origin (#PCDATA)>
+<!ELEMENT manufacturer (name,postal,city,province,street,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT postal (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT province (#PCDATA)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+]>
+
+<head>
+	<title>An XHTML 1.0 Strict standard template</title>
+	
+</head>
+
+<body>
+
+</body>
+</html>

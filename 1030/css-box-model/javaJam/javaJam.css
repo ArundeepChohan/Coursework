@@ -1,0 +1,40 @@
+body{
+
+background-color:#ffffcc;
+text-color: #330000;
+font-family: Verdana;
+}
+h1{
+background-color #ccaa66;
+text-align:center;
+text-color: #000000;
+line height:200%;
+
+}
+nav ul{
+list-style-type:none;
+float:left;
+text-align:left;
+margin:0;
+}
+footer
+{
+background-color #ccaa66;
+text-color: #000000;
+font-size: .60em;
+font-style:italic;
+text-align:center;
+}
+wrapper{
+text-align:center;
+margin-right:auto;
+margin-left:auto;
+}
+details
+{ 
+text-align:center;
+}
+details #p
+{
+margin:0;
+}

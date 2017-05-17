@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Real estate</title>
+ <link href="css/bootstrap.css" rel="stylesheet"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.0/react.min.js">
+		</script>
+		<script src="https://fb.me/react-15.0.0.js"></script>
+    <script src="https://fb.me/react-dom-15.0.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+  </head>
+  <body >
+<div class="container-fluid">
+<div class="row">
+	<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#login">Login</a></li>
+   <li><a data-toggle="tab" href="#controls">Controls</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+
+		<div class="col-md-2">
+		
+			<div id="form">
+
+	<form action="/house" method="GET" >
+	<br></br>
+    PriceMin: 
+        <input type="number" name="pricemin"/>
+    <br></br>
+    PriceMax:
+        <input type="number"name="pricemax" />
+    <br></br>
+        <select name="bedroom" >
+                <option value="default">All Bedrooms</option>
+                <option value="1">1 Bedroom</option>
+                <option value="2">2 Bedrooms</option>
+                <option value="3">3 Bedrooms</option>
+                <option value="4">4 Bedrooms</option>
+            </select>
+ <br></br>
+    
+            
+            <select name="bathroom" >
+                <option value="default">All Bathrooms</option>
+                <option value="1">1 Bathroom</option>
+                <option value="2">2 Bathrooms</option>
+                <option value="3">3 Bathrooms</option>
+                <option value="4">4 Bathrooms</option>
+            </select>
+    <br></br>
+
+            <select name="type">
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="basement">Basement</option>
+            </select>
+	<br></br>
+    
+		<input type="submit" value="Submit" />
+		</form>
+        
+	</div>
+	
+	<div class="col-md-8" >
+
+	</div>
+	
+	<div class="col-md-2">
+	</div>
+	
+	</div>
+	</div>
+	
+
+	
+    <div id="login" class="tab-pane fade">
+	<h3>Login</h3>
+        <form action="/login" method="GET">
+
+        Username : <input type="text" name="username"/>
+        Password : <input type="text" name="password"/>
+		
+        <input type="submit"/>
+        </form>
+	</div>
+ <div id="controls" class="tab-pane fade">
+ <form action="/post" method="POST">
+
+ Price : <input type="number" name="pricePost"/>
+ <br></br>
+Bedroom:    <select name="bedroomPost" >
+                <option value="default">All Bedrooms</option>
+                <option value="1">1 Bedroom</option>
+                <option value="2">2 Bedrooms</option>
+                <option value="3">3 Bedrooms</option>
+                <option value="4">4 Bedrooms</option>
+            </select>
+<br></br>
+Bathroom: <select name="bathroomPost" >
+                <option value="default">All Bathrooms</option>
+                <option value="1">1 Bathroom</option>
+                <option value="2">2 Bathrooms</option>
+                <option value="3">3 Bathrooms</option>
+                <option value="4">4 Bathrooms</option>
+            </select>
+<br></br>
+Type:  <select name="typePost">
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="basement">Basement</option>
+            </select>
+<br></br>
+Url: <input type="text" name="urlPost"/>
+<br></br>
+Address: <input type="text" name="addressPost"/>
+<br></br>
+Description<input type="text" name="descriptionPost"/>
+<input type="submit"/>
+        </form>
+ </form>
+ </div>
+</div>
+</div>
+</div>
+  </body>
+</html>

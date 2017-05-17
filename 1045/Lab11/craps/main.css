@@ -1,0 +1,46 @@
+/*  Styles for the JS Craps */
+
+#dice-images {
+	display: none;
+}
+
+#rules {
+	font-size: 0.9em;
+}
+
+#gameboard {
+	border: solid 1px;
+	border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+    margin: auto;
+	padding: 50px 20px;
+	position: relative;
+	width: 50%;
+}
+
+#gameboard div {
+	text-align: center;
+}
+
+#gameboard img {
+	padding: 10px;
+}
+
+#gameboard button {
+	cursor: pointer;
+}
+
+#roll-button {
+	font-size: 1em;
+}
+
+#newgame-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#message {
+	font-size: 1.3em;
+	padding: 20px;
+}

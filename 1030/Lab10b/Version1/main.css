@@ -1,0 +1,61 @@
+body
+{
+margin:0;
+}
+header
+{
+width:1000px;
+height:200px;
+background-image: url("http://lorempixel.com/1000/200/city");
+
+} 
+div#caption
+{
+margin:50px;
+text-align:right;
+color:#f1f1f1; 
+font-size:50px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f1f1f1;
+}
+
+li {
+    float: left;
+	display:inline;
+	
+}
+
+li a {
+    /*display: block;*/
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+	color: #ffffff;
+    background-color: #555;
+}
+
+li a.active {
+   color: #ffffff;
+    background-color: #555;
+}
+main
+{
+background-color: white;
+margin: 10px;
+}
+footer
+{
+background-color: black;
+color: white;
+padding: 10px;
+}
