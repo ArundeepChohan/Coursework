@@ -1,15 +1,14 @@
+Several Html Pages 
 
-
-Prerequisites
+Prerequisites:
 Anything that can run an Html page.
 
-Built With
-Bootstrap - The web framework used
+Built With:
+Bootstrap - The web framework used.
 HTML
 Javascript
 API - Google Map
 
-Authors
+Authors:
 Arundeep Chohan
 
-Acknowledgments
