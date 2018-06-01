@@ -1,15 +1,15 @@
 Rise of Gallantmon: 
 A project for CPSC 1045 which uses Javascript, HTML, CSS and Bootstrap along with various sound effects to create a functional game.
 
-Prerequisites
+Prerequisites:
 Able to run HTML pages.
 
-Installing
+Installing:
 Download entire folder and click on the index.html page to run.
 
-Built With
+Built With:
 Bootstrap - Front end.
 Javascript, HTML & CSS.
 
-Authors
+Authors:
 Arundeep Chohan, Hin Wong, Amandeep Chahal
