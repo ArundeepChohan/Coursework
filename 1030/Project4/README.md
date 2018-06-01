@@ -4,8 +4,7 @@ Prerequisites:
 Anything that can run an Html page.
 
 Built With:
-Bootstrap - The web framework used.
-HTML & Javascript.
+Javascript, CSS and Bootstrap - front end.
 API - Google Map.
 
 Authors:
