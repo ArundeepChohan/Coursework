@@ -16,7 +16,6 @@ var login1 ={username:"admin",password:"admin",permission:1};
 var login3 ={username:"user",password:"user",permission:3};
 var login2 ={username:"subscriber",password:"subscriber",permission:2};
 
-
 var houseSchema = new mongoose.Schema({
 price: Number,
 bedroom: Number,
@@ -37,12 +36,10 @@ House.find({}, function(err,docs){
   
   });
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index');
 });
-
 
 router.post('/post', function(req, res, next) {
 var item = {
@@ -57,7 +54,6 @@ url			:req.body.urlPost,
 
   var data = new House(item);
   data.save();
-
   res.redirect('/');
 });
 router.post('/update', function(req, res, next) {
@@ -68,6 +64,7 @@ bathroom:req.body.bathroomUpdate,type:req.body.typeUpdate,url:req.body.urlUpdate
 );
 res.redirect('/');
 });
+
 router.post('/delete', function(req, res, next) {
 	var id = req.body.id;
 	House.findByIdAndRemove(id).exec();
