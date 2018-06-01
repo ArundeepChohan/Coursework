@@ -8,8 +8,7 @@ Installing:
 Download entire folder and click on the index.html page to run.
 
 Built With:
-Bootstrap - Front end.
-Javascript, HTML & CSS.
+Javascript, HTML, CSS and Bootstrap - Front end.
 
 Authors:
 Arundeep Chohan, Hin Wong, Amandeep Chahal
