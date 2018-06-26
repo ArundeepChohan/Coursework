@@ -1,7 +1,7 @@
 /** 
 Filename: Lab1.java
 Written by Arundeep Chohan
-Written on Sept, 12, 2012
+
 Course:CPSC 1181-001
 Instructor:Hossein Darbandi
 */
