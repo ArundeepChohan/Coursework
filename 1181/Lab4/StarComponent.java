@@ -1,7 +1,7 @@
 /** 
 Filename: StarComponent.java
 Written by Arundeep Chohan
-Written on Oct,9,2012
+
 Course:CPSC 1181-001
 Instructor:Hossein Darbandi
 This program adds the stars into an arraylist and draws out the stars 
