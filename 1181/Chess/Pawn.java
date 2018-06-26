@@ -1,7 +1,6 @@
 /** 
 Filename: Pawn.java
 Written by Arundeep Chohan
-Written on Nov,9,2012
 Course: CPSC 1181-001
 Instructor:Hossein Darbandi
 This program is used to create Piece Pawn
