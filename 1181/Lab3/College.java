@@ -1,15 +1,14 @@
 /** 
 Filename: College.java
 Written by Arundeep Chohan
-Written on Sept, 19, 2012
 Course: CPSC 1181-001
 Instructor:Hossein Darbandi
 
-Develop a program that stores the College’s Student’s information. The program should support the following operations.
+Develop a program that stores the Collegeâ€™s Studentâ€™s information. The program should support the following operations.
 Adding a new student to the college.
 Looking up an existing student.
 Adding a quiz score (assume that the quiz scores are always out of 10).
-Finding a student with the college’s highest quiz average.
+Finding a student with the collegeâ€™s highest quiz average.
 Deleting students from the college.
 */
 import java.util.*;
