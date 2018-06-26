@@ -1,7 +1,6 @@
 /** 
 Filename: CollegeTester.java
 Written by Arundeep Chohan
-Written on Sept, 24, 2012
 Course: CPSC 1181-001
 Instructor:Hossein Darbandi
 
@@ -15,12 +14,12 @@ public class CollegeTester
 	*/
    private static College Langara= new College();
    private static final String CONFIRMATION ="YES";
-   private static final String ADD="ADD"; //– Add a new Student
-   private static final String FIND="FIND"; //– Find a Student
-   private static final String ADD_QUIZ ="ADDQUIZ"; //– Add a quiz score for a student
-   private static final String FIND_HIGHEST="FINDHIGHEST"; //– Find a student with the highest quiz score
-   private static final String DELETE="DELETE"; //– Delete a Student
-   private static final String QUIT="QUIT"; //– Quit
+   private static final String ADD="ADD"; //â€“ Add a new Student
+   private static final String FIND="FIND"; //â€“ Find a Student
+   private static final String ADD_QUIZ ="ADDQUIZ"; //â€“ Add a quiz score for a student
+   private static final String FIND_HIGHEST="FINDHIGHEST"; //â€“ Find a student with the highest quiz score
+   private static final String DELETE="DELETE"; //â€“ Delete a Student
+   private static final String QUIT="QUIT"; //â€“ Quit
 	
    /**
 	This program prompt user for input for action
