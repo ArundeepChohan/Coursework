@@ -1,7 +1,6 @@
 /** 
 Filename: StudentTester.java
 Written by Arundeep Chohan
-Written on Sept, 24, 2012
 Course:CPSC 1181-001
 Instructor:Hossein Darbandi
 
