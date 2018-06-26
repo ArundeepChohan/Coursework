@@ -1,7 +1,7 @@
 
 
-Prerequisites: Anything that can run an Html page.
+Prerequisites: Anything that can run an C++.
 
-Built With: 
+Built With: C++, Eclipse
 
 Authors: Arundeep Chohan
