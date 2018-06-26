@@ -1,5 +1,6 @@
 ![Screenshot](https://github.com/achohan01/Summary/blob/master/RiseofGallantmon.png)
 Rise of Gallantmon: 
+
 A project for CPSC 1045 which uses Javascript, HTML, CSS and Bootstrap along with various sound effects to create a functional game.
 
 Prerequisites:
