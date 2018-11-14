@@ -1,7 +1,6 @@
 /** 
 Filename: Multiplier.java
 Written by Arundeep Chohan
-Written on Nov,13,2012
 Course:CPSC 1181-001
 Instructor:Hossein Darbandi
 This creates class Multiplier which implements Evaluator
