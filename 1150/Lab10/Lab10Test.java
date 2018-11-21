@@ -1,4 +1,4 @@
-/** Test program for lab auiz 10 */
+/** Test program for lab quiz 10 */
 
 // Import packages
 import java.io.*;
