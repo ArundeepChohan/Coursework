@@ -1,8 +1,6 @@
 /**
 Filename: Lab7.java
 Written by<Arundeep Chohan>
-Contact: arundeepchohan2009@hotmail.com
-Written on<Oct, 22, 2013>
 Course: Cpsc 1150-001
 Instructor: Hossein Darbandi
 Compiler: Jdk 1.7
