@@ -2,7 +2,6 @@
  *Program Name: Lab11.java
  *Author:           Michael Currie 100206245
  *Co-Author:      Arundeep Chohan 100201711
- *Date:             November 19th, 2013
  *Course:           CPSC 1150-1
  *Instructor:     Hossein Darbandi
  *Compiler:         JDK 1.7
