@@ -1,4 +1,4 @@
-/** Test program for lab auiz 9 */
+/** Test program for lab quiz 9 */
 import java.util.*;
 public class Lab9Test{
 	public static void main(String[] args){
