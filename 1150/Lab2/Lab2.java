@@ -1,6 +1,5 @@
 //Filename: Lab2.java
 //Written by<Arundeep Chohan>
-//Written on<Sept, 17,2013>
 //Course: Cpsc 1150-001
 //Instructor: Hossein Darbandi
 //Compiler: Jdk 1.7
