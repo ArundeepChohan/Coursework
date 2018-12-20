@@ -1,8 +1,8 @@
 ![Screenshot](https://github.com/achohan01/Summary/blob/master/CollegeTester.png)
 
-College Tester
+College Tester:
 
-Prerequisites: Anything that can run an C++.
+Prerequisites: Anything that can run C++.
 
 Built With: C++, Eclipse
 
