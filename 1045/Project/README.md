@@ -16,9 +16,15 @@ Authors:
 Arundeep Chohan, Hin Wong, Amandeep Chahal
 
 My Roles:
-•Uses Javascript, HTML and CSS.
-•Bootstrap for the front end framework.
-•Uses MP3 to create sound effects and background music.
-•Used cut out images for characters from GIMP.
-•Creating a timer based setup per level.
-•Scoreboard for the fastest time.
+
+Uses Javascript, HTML and CSS.
+
+Bootstrap for the front end framework.
+
+Uses MP3 to create sound effects and background music.
+
+Used cut out images for characters from GIMP.
+
+Creating a timer based setup per level.
+
+Scoreboard for the fastest time.
