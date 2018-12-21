@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frame Animation</title>
+
+	<style type="text/css">
+		canvas
+		{
+			border:1px solid black;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<canvas id="demoCanvas" width="1024" height="768"></canvas>
+
+	<script type="text/javascript">
+
+		window.onload = function()
+		{
+			var canvas = document.getElementById("demoCanvas");
+			var context = canvas.getContext("2d");
+
+			// ARRAY FOR THE FRAMES
+			var frames = [];
+
+			// TOTAL NUMBER OF FRAMES LOADED SO FAR
+			var numLoaded = 0;
+
+			// TOTAL NUMBER OF FRAMES
+			var numTotal = 9;
+
+			// KEEPS TRACK OF WHICH FRAME WE'RE ON
+			var t = 0;
+
+			// LOAD FRAMES
+			for (var i = 0;i<numTotal;i++)
+			{
+				// LOAD IMAGE AND PUT IT IN ARRAY
+				var im = new Image();
+				im.src="frames/beet-0000"+i+".png";
+				frames.push(im);
+				im.onload = function()
+				{
+					// COUNT HOW MANY FRAMES HAVE BEEN LOADED, AND START THE ANIMATION WHEN ALL FRAMES HAVE BEEN LOADED
+					numLoaded++;
+					// We want 9 frames
+					if(numLoaded>=numTotal)
+					{
+						main();
+					}
+				}
+			}
+
+			function main()
+			{
+				startGame();
+			}
+
+			function startGame()
+			{
+				updateGame();
+				window.requestAnimationFrame(drawGame);
+			}
+
+			function updateGame()
+			{
+				// GAME AND ANIMATION LOGIC GOES HERE
+				// INCREMENT TO THE NEXT FRAME, LOOP WHEN AT THE END
+				t++;
+				if(t==numTotal)
+				{
+					t=0;
+				}
+				// CHANGE THE NUMBER OF MILLISECONDS TO ADJUST FRAME RATE
+				window.setTimeout(updateGame, 200);
+				
+			}
+
+			function drawGame()
+			{
+				context.clearRect(0,0,canvas.width,canvas.height);
+
+				// RENDERING HAPPENS HERE
+				// DRAW THE NEXT IMAGE IN THE ARRAY
+				context.drawImage(frames[t], 400, 400);
+				window.requestAnimationFrame(drawGame);
+			}
+		}
+	</script>
+
+</body>
+</html>
