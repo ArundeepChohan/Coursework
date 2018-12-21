@@ -1,4 +1,0 @@
-Your Task: rather than setting the diffuseTexture of the material, try setting the specularTexture instead. What is the difference between the two? What happens if you use a specularTexture and diffuseTexture together, with the same image for both? 
-
-
-Specular texure is used for relectivety and diffused is used for color change. If you use both you get a stronger effect on shine/brightness. 
