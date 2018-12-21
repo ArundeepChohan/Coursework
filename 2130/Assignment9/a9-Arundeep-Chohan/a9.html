@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Babylon Template</title>
+
+        <style>
+            html, body {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #renderCanvas {
+                width: 100%;
+                height: 100%;
+                touch-action: none;
+            }
+        </style>
+		<script src="https://cdn.babylonjs.com/cannon.js"></script> 
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+        <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    </head>
+
+   <body>
+
+    <canvas id="renderCanvas" touch-action="none"></canvas> //touch-action="none" for best results from PEP
+
+    <script>
+        var canvas = document.getElementById("renderCanvas"); // Get the canvas element 
+        var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
+
+        /******* Add the create scene function ******/
+        var createScene = function () {
+
+            // Create the scene space
+            var scene = new BABYLON.Scene(engine);
+
+            // Add a camera to the scene and attach it to the canvas
+            var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 10, new BABYLON.Vector3(0,0,0), scene);
+            camera.attachControl(canvas, true);
+			
+            // Add lights to the scene
+            var light1 = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(1, 1, 0), scene);
+            var light2 = new BABYLON.PointLight("light2", new BABYLON.Vector3(0, 1, -1), scene);
+
+            // Add and manipulate meshes in the scene
+            var sphere1 = BABYLON.MeshBuilder.CreateSphere("sphere1", {diameter:2}, scene);
+			//
+			var sphere2 = BABYLON.MeshBuilder.CreateSphere("sphere2", {diameter:3}, scene); 
+			sphere2.position = new BABYLON.Vector3(0,2,0); 
+			sphere2.position.x = sphere1.position.x-3;
+			sphere2.position.y=sphere1.position.y;
+			
+			var pinkMaterial = new BABYLON.StandardMaterial("pinkMaterial", scene); 
+			sphere2.material = pinkMaterial;
+			pinkMaterial.diffuseColor = new BABYLON.Color3(1, .3, .6); 
+			pinkMaterial.specularPower = 90;
+			
+			//
+			var sphere3 = BABYLON.MeshBuilder.CreateSphere("sphere3", {diameter:3}, scene); 
+			sphere3.position = new BABYLON.Vector3(0,2,0); 
+			sphere3.position.x = sphere1.position.x+3;
+			sphere3.position.y=sphere1.position.y;
+			var blueMaterial = new BABYLON.StandardMaterial("blueMaterial", scene); 
+			sphere3.material = blueMaterial;
+			blueMaterial.diffuseColor = new BABYLON.Color3(0, 0, .6); 
+			blueMaterial.specularPower = 90;
+			
+			var pinkMaterial = new BABYLON.StandardMaterial("pinkMaterial", scene); 
+			sphere2.material = pinkMaterial;
+			pinkMaterial.diffuseColor = new BABYLON.Color3(1, .3, .6); 
+			pinkMaterial.specularPower = 90;
+			
+			var brickMaterial = new BABYLON.StandardMaterial("brickMaterial", scene); 
+			sphere1.material=brickMaterial;
+			//https://www.pexels.com/photo/photography-of-brickwall-761142/
+			//Fancycrave.com
+			brickMaterial.diffuseTexture = new BABYLON.Texture("pexels-photo-761142.jpeg", scene); 
+			//Compare
+			//brickMaterial.specularTexture = new BABYLON.Texture("pexels-photo-761142.jpeg", scene); 
+			
+			var ground = BABYLON.MeshBuilder.CreateGround("ground", {height:100, width:100}, scene);  
+			ground.position.y = -2; 
+
+			var grassMaterial = new BABYLON.StandardMaterial("grassMaterial", scene);
+			ground.material=grassMaterial;
+			//https://www.pexels.com/photo/background-bright-close-up-environment-413195/
+			//Mike fallarme
+			grassMaterial.diffuseTexture = new BABYLON.Texture("pexels-photo-413195.jpeg", scene); 			
+			grassMaterial.diffuseTexture.uScale = 4; 
+			grassMaterial.diffuseTexture.vScale = 4;
+			
+			scene.clearColor = new BABYLON.Color3(.8,.9,1);
+			var directionY=-0.10;		
+
+			var physicsPlugin = new BABYLON.CannonJSPlugin(); 
+			var gravityVector = new BABYLON.Vector3(0, -9.81, 0); 
+			scene.enablePhysics(gravityVector, physicsPlugin); 
+			sphere2.physicsImpostor = new BABYLON.PhysicsImpostor(sphere2, BABYLON.PhysicsImpostor.SphereImpostor, { mass: 1, restitution: 0.8 }, scene); 
+			ground.physicsImpostor = new BABYLON.PhysicsImpostor(ground, BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0, restitution: 0.9 }, scene); 
+			sphere2.physicsImpostor.applyImpulse(new BABYLON.Vector3(1,2,0), sphere2.getAbsolutePosition());
+
+			sphere1.physicsImpostor = new BABYLON.PhysicsImpostor(sphere1, BABYLON.PhysicsImpostor.SphereImpostor, { mass: 1, restitution: 0.8 }, scene); 
+
+			scene.registerAfterRender(function () {
+			
+			if (sphere3.intersectsMesh(ground, true)) {
+			 sphere3.material.diffuseColor = new BABYLON.Color3(1, 0, 0);  
+				directionY*=-1;
+				sphere3.position.y = sphere3.position.y +directionY; 
+
+
+			 } else {
+			 sphere3.position.y = sphere3.position.y +directionY; 
+			 
+			 } 
+			});
+			window.addEventListener("click", function () { 
+			var pickResult = scene.pick(scene.pointerX, scene.pointerY);   
+			pickResult.pickedMesh.material.diffuseColor = new BABYLON.Color3(0, 1, 0); 
+			//
+			pickResult.pickedMesh.physicsImpostor.applyImpulse(new BABYLON.Vector3(0,10,-5), pickResult.pickedMesh.getAbsolutePosition());
+
+			}); 
+            return scene;
+        };
+        /******* End of the create scene function ******/    
+
+        var scene = createScene(); //Call the createScene function
+
+        // Register a render loop to repeatedly render the scene
+        engine.runRenderLoop(function () { 
+                scene.render();
+        });
+
+        // Watch for browser/canvas resize events
+        window.addEventListener("resize", function () { 
+                engine.resize();
+        });
+    </script>
+
+   </body>
+
+</html>
