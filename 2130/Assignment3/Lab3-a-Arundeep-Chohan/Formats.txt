@@ -1,0 +1,3 @@
+The best format for saving this image would be JPEG if you want to preserve space or PNG if you want to retain quality. 
+In this case I would lean more to PNG due to it's ability to capture the opaqueness of the image and not the half the space you would get from
+what I got from my Jpeg compression.   
