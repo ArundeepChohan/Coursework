@@ -1,0 +1,9 @@
+
+ Open the file explorer, navigate to the folder where the files are saved, right click on the files, and select "Properties" to find the file size of the AEP file and the PNG file. How do the file sizes compare to one another? What accounts for this difference? Record your answers in a file called answers.txt. 
+
+The stroke color, stroke width and fill account for the size needed to record in a PNG.
+
+Cow:      		AEP->PNG	 	81kb->161kb
+
+
+Grapefruit: 					66kb-> 103kb
