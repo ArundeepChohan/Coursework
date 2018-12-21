@@ -1,0 +1,71 @@
+1.
+ii) 
+
+Started off with a cube. Subdivided about 4 time to create 8 vertical squares. Mirrored around the middle line both lines scaled/shrinked horizontally. Merged the lines at the center at the end. Also used smoothed.
+
+v)
+
+Specular: Intensity: Brightness of the specular highlight.
+
+Specular: Hardness: Size of the specular highlight.
+
+Shading: Ray Mirror: Enables the light source to generate ray-traced shadows.
+
+Constant vs Adaptive QMC:
+Uniform vs Nonuniform. Slow vs Quick.
+
+Samples: used for qmc calculations.
+Size: size of fuzzy part of edge for shadow.
+
+https://docs.blender.org/manual/ko/dev/render/blender_render/lighting/shadows/raytraced_properties.html
+
+2.
+a) 
+Smallest: football.mp4
+Largest: footballRotateFast.mp4
+
+The football.mp4 has lower frames/sampling rate causing a smaller file size than the other two. It also has similar frames causing a much higher compression ratio.
+
+b)
+The animation of the football is being quantized. The difference in the animation of the football as images is being sampled. A higher sampling rate and quantization results in a higher file size. In our example we have more sampling rate and quantization resulting in a higher file size for the footballRotateFast. 
+
+c) 
+The key frames in these animations seem to start off from the same spot. The difference of some of the key frames in rotation seem to vary more than in others. This is what creates less temporal compression. 
+
+3.
+a)
+Original:DrumsA.aif
+Low Bit Depth:DrumsB.aif
+Low Sampling:DrumsC.aif
+
+Low Bit Depth adds a bit of noise which you can hear.
+Low sampling rate equals less frequency. We seem to be missing the high end frequency from what I can hear.
+
+4.
+a)
+The red cookie seems to have the highest saturation which means it has the most intense color. The middle cookie seems to have the least intense color which means it has no color and is a shade of grey. 
+
+b)
+The white cookie would have the highest red value. The black part of the bottom cookie would be the lowest red value. RGB is additive so if you add 255,255,255 you would get white and the least red would be nearer to the color black.
+
+
+5.
+a) I would expect the JPEG to be of better quality because of more colors. GIF would lose alot of color for the palette. Color gradients work better in JPEG. JPEG would also lose some color as well.
+
+b)
+GIF:
+Bit Depth:4
+Color Model: RGB 
+
+JPEG:
+Bit Depth: 16
+Color Model: RGB
+
+c)
+Originally saved in PNG-24 bits. It needs alot of colors for a gradient. I am assuming PNG-8 bits for a smaller size than GIF and decent quality due to its loseless.
+
+6.
+
+MIDI and Vector graphics both deal with encoding semantic information about objects. MIDI deals with sound and Vector deals with shapes. MIDI doesn't actually encode the sound wave and the Vector doesn't actually encode the pixels. MIDI is hard to create natural sounding instruments and Vector is hard to create natural pictures. They might be harder to create but they do have a good quality which is their file size which tends to be small compared to a WAV or PNG file. Vectors also tend to scale vastly better than their PNG counterparts allowing for amazing logos.
+
+

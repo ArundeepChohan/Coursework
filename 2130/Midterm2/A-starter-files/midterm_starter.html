@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+
+	<style type="text/css">
+		canvas
+		{
+			border:1px solid black;
+			display: block;
+			margin:auto;
+		}
+	</style>
+
+</head>
+<body>
+
+
+	<div id="timer" style="border:2px solid black; height:20px; width:100%;">
+	 <div id="bar" style="background-color:red; width:0%;height:100%"></div>
+	</div>
+
+<canvas id="demoCanvas" width="1024" height="700"></canvas>
+
+<!-- Add the hearts to the canvas -->
+<script type="text/javascript" src="add-hearts.js"></script>
+<!-- Heart class -->
+<script src="heart.js"></script>
+<!-- Barrier Class -->
+<script src="barrier.js"></script>
+
+<script type="text/javascript">
+
+// mouse position
+mouseX = 0;
+mouseY = 0;
+
+// Number of s
+var numHearts =19;
+
+// Number of hearts that have been hit and turned green
+var numHit = 0;
+
+// Radius of hearts
+var radius = 10;
+// Radius of barrier
+var barRadius = 30;
+// Maximum speed
+var maxSpeed = 1;
+
+// Counter variable
+var t = 0;
+
+// Time limit
+var timeLimit = 3000;
+
+	window.onload = function()
+	{
+
+		// Distance function
+		function distance(o1, o2){
+			return Math.sqrt(Math.pow(o1.x - o2.x,2) + Math.pow(o1.y - o2.y, 2));
+		}
+
+		var canvas = document.getElementById("demoCanvas");
+		var context = canvas.getContext("2d");
+	
+		// TODO implement event listener/handler for mousemove event
+		canvas.addEventListener('mousemove',function(event){
+		var canvasBox= canvas.getBoundingClientRect();
+		mouseX=event.x-canvasBox.left;
+		mouseY=event.y-canvasBox.top;
+		});
+		
+		// This function creates all hearts and return an array
+		var hearts = addHearts(canvas, Heart);
+
+		// Create a new barrier
+		var barrier = new Barrier(0,0,barRadius);
+	
+		main();
+
+		function main()
+		{
+			startGame();
+		}
+
+		function startGame()
+		{
+			updateGame();
+			window.requestAnimationFrame(drawGame);
+		}
+
+		function updateGame()
+		{
+			// Check for win (time is past time limit)
+			if(t > timeLimit)
+			{
+				alert("Great job! You win!");
+			 return;
+			}
+
+			//Check for lose (all hearts have had collisions)
+			if (numHit == numHearts)
+			{
+				alert("Ouch! You lost!");
+				return;
+			}
+
+			// Increment time
+			t++;
+
+			// Advance progress bar
+			document.getElementById("bar").style.width=(t*100/timeLimit)+"%";
+
+			// TODO Loop through all hearts and do the following: move each heart; check for collisions between hearts; check for collision between each heart and the barrier. Note that collisions between the hearts and edges of canvas are implemented in the Heart.move() method and don't need to be implemented here.
+
+			// Move the barrier based on mouse
+			barrier.move();
+
+			window.setTimeout(updateGame, 10);
+		}
+
+		function drawGame()
+		{
+			context.clearRect(0,0,canvas.width,canvas.height);
+
+			// Render the barrier
+			barrier.render(context);
+			
+var i,j,k;
+	
+	for (i =0;i<=hearts.length-1;i++){
+		if (distance(hearts[i],barrier)<hearts[i].r)
+		{
+			hearts[i].inBarrier=true;
+		}
+		else
+		{
+			hearts[i].inBarrier=false;
+		}
+		
+				hearts[i].move(canvas);
+		
+				hearts[i].render(context);
+			}
+	
+	for(k = 0;k<hearts.length-1;k++)
+		{
+			for(j = k+1;j<=hearts.length-1;j++)
+			{
+	
+					if(distance(hearts[k],hearts[j])<=hearts[k].r)
+					{
+						hearts[k].hit();
+						hearts[j].hit();
+					}
+				
+			}
+	
+		}
+		
+			
+		window.requestAnimationFrame(drawGame);
+				// Render the hearts
+	
+}}
+</script>
+
+</body>
+</html>
