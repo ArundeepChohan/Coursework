@@ -1,11 +1,4 @@
 /*
- * 		Assign5.cpp
- *
- *  	Created on: Feb 2, 2017
- *      Author: Arundeep Chohan
- *      Student#: 100201711
- *      Course#: CPSC 1160-002
- *
  *		Write a program that asks for a number from the user, generates
  *		an array of size of the number with random values between n-n^2
  *		and find the median of the array.
