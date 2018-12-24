@@ -1,9 +1,5 @@
 /*
- * your_final_code.cpp
- *
- *  Created on: May 3, 2017
- *      Author: Arundeep Chohan
- *      Course: CPSC 2150-
+
  */
 #include<iostream>
 #include <string>
