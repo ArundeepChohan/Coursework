@@ -1,11 +1,4 @@
 /*
- * StackOfCircles.h
- *
- *  	Created on: Feb 23, 2017
- *      Author: Arundeep Chohan
- *      Student#: 100201711
- *      Course#: CPSC 1160-002
- *
  *       A header file for the declaration of the functions for stackofcircles.
  */
 
