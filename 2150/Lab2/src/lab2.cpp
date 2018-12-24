@@ -1,11 +1,4 @@
-/*
- * lab2.cpp
- *
- *  Created on: May 8, 2017
- *      Author: Arundeep Chohan
- *      Student Id: 100201711
- *      Course: Cpsc 2150-1
- *
+/
  *
  */
 
