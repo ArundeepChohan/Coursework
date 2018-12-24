@@ -1,11 +1,4 @@
 /*
- * Planer.cpp
- *
- *  Created on: Jan 26, 2017
- *      Author: Arundeep Singh Chohan
- *      Student#: 100201711
- *      Course#: Cpsc 1160-002
- *
  *      Write a planner program to plan his trip where the traveling cost between
  *      different stations (cities) are provided within an input file. The same city can't
  *      be visited more then once and the cities can not have a direct link.
