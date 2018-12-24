@@ -1,10 +1,4 @@
 /*
- * 		Filename:RecVsIter.cpp
- *  	Created on: Jan 19, 2017
- *      Author: Arundeep Chohan
- *      Student#: 100201711
- *      Course: CPSC 1160-002
- *
  *      This program displays the recursive/iterative methods of both the Fibonacci and Factorials.
  */
 #include<iostream>
