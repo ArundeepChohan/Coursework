@@ -1,10 +1,5 @@
 /*
- * Name.h
- *
- *  Created on: Mar 18, 2017
- *      Author: Arundeep Chohan
- *      Student#: 100201711
- *      Course#: CPSC 1160-002
+
  */
 
 #ifndef SRC_NAME_H_
