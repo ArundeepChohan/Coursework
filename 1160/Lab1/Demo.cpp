@@ -1,9 +1,5 @@
 /*
- * demo.cpp
- *
- *  Created on: Jan 5, 2017
- *      Author: Arundeep Chohan
- *      Student#: 100201711
+Prime numbers
  */
 
 #include<iostream>
