@@ -1,10 +1,5 @@
 /*
- * Distance.cpp
- *
- *  	Created on: Jan 12, 2017
- *      Author: Arundeep Chohan
- *      Student#: 100201711
- *      Course#: Cpsc 1160-002
+Calculates Distance
  */
 #include<iostream>
 #include<math.h>
