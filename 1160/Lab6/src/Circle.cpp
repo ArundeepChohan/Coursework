@@ -1,11 +1,4 @@
 /*
- * Circle.cpp
- *
- *  	Created on: Feb 23, 2017
- *      Author: Arundeep Chohan
- *      Student#: 100201711
- *      Course#: CPSC 1160-002
- *
  *      The implementation of the Circle functions.
  */
 #include "Circle.h"
