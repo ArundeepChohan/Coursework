@@ -1,11 +1,4 @@
 /*
- * TestCode.cpp
-
- *
- *  Created on: Mar 1, 2017
- *       Author: Arundeep Chohan
- *      Student#: 100201711
- *      Course#: CPSC 1160-002
  *
  */
 #include "IntVector.h"
