@@ -1,11 +1,4 @@
 /*
- * TestMyClasses.cpp
- *
- *  	Created on: Feb 22, 2017
- *      Author: Arundeep Chohan
- *      Student#: 100201711
- *      Course#: CPSC 1160-002
- *
  *		This application creates circles with any radius,
  *		populates an array randomly 0-50.00 with a user inputed size.
  *		it populates a stack with circles and can pop out the max
