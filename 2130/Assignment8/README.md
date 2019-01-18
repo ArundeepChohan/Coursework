@@ -1,7 +1,7 @@
 ![Screenshot](https://github.com/achohan01/Summary/blob/master/PokeballThrowingGame.png)
 Pokeball Throwing Game: 
 
-A project for CPSC 2130 which uses Javascript, HTML5, CSS3 along with various sound effects to create a functional game.
+A project for CPSC 2130 which uses Javascript, HTML5, CSS3 to create a functional game.
 
 Prerequisites:
 Able to run HTML pages.
