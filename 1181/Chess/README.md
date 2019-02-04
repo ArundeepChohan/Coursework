@@ -2,7 +2,7 @@
 ![Screenshot](https://github.com/achohan01/Summary/blob/master/Chess%20Program.bmp)
 Chess Program: 
 
-A project for CPSC 1181 which the user has to make a 2d chess board with chess rules implemented using Java based coding.
+A project for CPSC 1181 which the user has to make a 2d Chess board with Chess rules implemented using Java based coding.
 
 Prerequisites:
 Able to run Java pages.
@@ -22,7 +22,7 @@ Uses Java based coding.
 
 Java documentation.
 
-GUI of a 2d chess board which allows users to click and drag to move pieces.
+GUI of a 2d Chess board which allows users to click and drag to move pieces.
 
 Chess rules: Movement of individual pieces.
 
