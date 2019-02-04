@@ -11,7 +11,7 @@ Installing:
 Download entire folders Board and Chess to run.
 
 Built With:
-Javascript, HTML, CSS and Bootstrap - Front end.
+Java
 
 Authors:
 Arundeep Chohan
