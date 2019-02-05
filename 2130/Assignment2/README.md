@@ -1,5 +1,7 @@
-![Screenshot](https://github.com/achohan01/Summary/blob/master/Chess%20Program.bmp)
-![Screenshot](https://github.com/achohan01/Summary/blob/master/Chess%20Program.bmp)
+
+![Screenshot](https://github.com/achohan01/Summary/blob/master/StarcraftAnimation.png)
+
+![Screenshot](https://github.com/achohan01/Summary/blob/master/StarcraftAnimation2.png)
 
 Prerequisites:
 Able to run HTML pages.
