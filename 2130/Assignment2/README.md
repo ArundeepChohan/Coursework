@@ -1,3 +1,17 @@
+![Screenshot](https://github.com/achohan01/Summary/blob/master/Chess%20Program.bmp)
+![Screenshot](https://github.com/achohan01/Summary/blob/master/Chess%20Program.bmp)
+
+Prerequisites:
+Able to run HTML pages.
+
+Installing:
+Download entire folder and run index.html.
+
+Built With:
+HTML5, CSS3 and 
+
+Authors:
+Arundeep Chohan
 
 Links:
 
