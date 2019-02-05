@@ -3,6 +3,8 @@
 
 ![Screenshot](https://github.com/achohan01/Summary/blob/master/StarcraftAnimation2.png)
 
+My main theme is Starcraft primarily the interactions between the two Factions: Terran and the Zerg. One is a human group while the other are aliens. From the start I used some audio to achieve a pleasant easy going feel for how when Terrans lived peacefully without the Zerg which then transitions into a more serious tone after a Zergling rush. The video shows just how ruthless the Zerg can be.
+
 Prerequisites:
 Able to run HTML pages.
 
@@ -25,6 +27,3 @@ https://www.youtube.com/watch?v=xlSbPlKQ_dc
 
 https://www.youtube.com/watch?v=MVbeoSPqRs4
 
-Step 5: Write a short, one or two paragraph explanation of the idea you have chosen, why you chose it, and how the media items you have chosen are intended to convey this idea. In particular, talk about how the media items work together through your layout to be more effective and evocative. Save this explanation in to a text document for hand in called concept.txt
-
-My main theme is Starcraft primarily the interactions between the two Factions: Terran and the Zerg. One is a human group while the other are aliens. From the start I used some audio to achieve a pleasant easy going feel for how when Terrans lived peacefully without the Zerg which then transits into a more serious tone after a Zergling rush. The video shows just how ruthless the Zerg can be.
