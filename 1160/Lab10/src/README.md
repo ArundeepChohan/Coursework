@@ -1,4 +1,4 @@
-![Screenshot](https://github.com/achohan01/Summary/blob/master/CollegeTester.png)
+![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/CollegeTester.png)
 
 College Tester:
 
