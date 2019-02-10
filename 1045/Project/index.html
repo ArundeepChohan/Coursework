@@ -22,12 +22,12 @@
 			<!--https://www.developphp.com/video/JavaScript/Button-Sound-Effects-Tutorial-Audible-Menu-Systems -->
 		
 			var mouseClick = new Audio();
-			mouseClick.src="/mouseClick.mp3";
+			mouseClick.src="mouseClick.mp3";
 			mouseClick.volume = 1.0;
 			<!--http://soundbible.com/1773-Strong-Punch.html -->
 		
 			var equipment= new Audio();
-			equipment.src="/equipment.mp3";
+			equipment.src="equipment.mp3";
 			<!--http://soundbible.com/333-Cash-Register-Cha-Ching.html -->
 		
 			
@@ -89,7 +89,7 @@
 								<tr><th> Click Dmg&nbsp;:&nbsp;</th><th id="clickDmg"></th></tr>
 									<tr id="tr1" >
 										<td><button type="button" onmousedown="equipment.play()"id="myFirstButton" value="10">Buy</button> </td>
-										<td><img id="claw" src="/claws.png"width="50"height="50"  alt="Claw">Claw</td>
+										<td><img id="claw" src=""width="50"height="50"  alt="Claw">Claw</td>
 									</tr>
 									<tr id="tr2">
 										<td><button type="button"  onmousedown="equipment.play()"id="mySecondButton" value="20">Buy</button> </td>
@@ -105,10 +105,10 @@
 						<div id="fightArea">
 							<div id="enemy">
 								<!-- The section dealing with the enemy click events -->
-								<img id="enemy-image" onmousedown="mouseClick.play()"src="/enemy1.png" width="100"height="100" alt="Enemy">
+								<img id="enemy-image" onmousedown="mouseClick.play()"src="enemy1.png" width="100"height="100" alt="Enemy">
 								<p id="hp"></p>
 							</div>
-							<script src="/riseOfGallantmon.js"></script>
+							<script src="riseOfGallantmon.js"></script>
 						</div>
 					</div>
 				</div>
