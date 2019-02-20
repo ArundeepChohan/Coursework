@@ -3,8 +3,6 @@ Filename: Lab9.java
 Written by<Arundeep Chohan>
 Contact: arundeepchohan2009@hotmail.com
 Instructor: Hossein Darbandi
-Compiler: Jdk 1.7
-Hardware: Intel Core 2
 
 This program either prints out a date or a number based on given input.
 */
