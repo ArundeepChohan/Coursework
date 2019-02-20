@@ -1,7 +1,6 @@
 /** 
 Filename: LinkData.java
 Written by Arundeep Chohan
-
 Course:CPSC 1181-001
 Instructor:Hossein Darbandi
 This creates class LinkData
