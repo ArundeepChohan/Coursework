@@ -12,7 +12,7 @@ Installing:
 Download entire folder and run index.html.
 
 Built With:
-HTML5, CSS3 and 
+HTML5, CSS3 and Javascript
 
 Authors:
 Arundeep Chohan
