@@ -1,4 +1,9 @@
-Several Html Pages 
+
+![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/TrackingDashboard.png)
+
+Tracking Dashboard:
+
+Several Html Pages with one that track your location.
 
 Prerequisites:
 Anything that can run an Html page.
