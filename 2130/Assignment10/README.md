@@ -10,7 +10,7 @@ Prerequisites:
 Able to run Blender.
 
 Installing:
-Download entire folder and click on the armourMirror.blend page to run.
+Download entire folder and click on the armourMirror.blend and lighthouse.blend page to run.
 
 Built With:
 Blender
