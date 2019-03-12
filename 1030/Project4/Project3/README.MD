@@ -1,5 +1,5 @@
 
-![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/Chess.png)
+![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/MolonLabeWebpage.png)
 Molon Labe: 
 
 Prerequisites:
