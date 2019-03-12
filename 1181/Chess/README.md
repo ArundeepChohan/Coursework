@@ -1,4 +1,3 @@
-
 ![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/Chess.png)
 Chess Program: 
 
