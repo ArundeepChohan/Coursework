@@ -9,7 +9,7 @@ Installing:
 Download entire folders and click index.html to run.
 
 Built With:
-HTML, 
+HTML, CSS and Javascript
 
 Authors:
 Arundeep Chohan
