@@ -10,16 +10,12 @@ Installing:
 Download entire folder and click on the index.html page to run.
 
 Built With:
-Javascript, HTML, CSS and Bootstrap - Front end.
+Javascript, HTML, CSS and Bootstrap.
 
 Authors:
 Arundeep Chohan, Hin Wong, Amandeep Chahal
 
 My Roles:
-
-Uses Javascript, HTML and CSS.
-
-Bootstrap for the front end framework.
 
 Uses MP3 to create sound effects and background music.
 
