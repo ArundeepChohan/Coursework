@@ -10,7 +10,7 @@ Installing:
 Download entire folder and click on the index.html page to run.
 
 Built With:
-Javascript, HTML5, CSS3 - Front end.
+Javascript, HTML5, CSS3.
 
 Authors:
 Arundeep Chohan
