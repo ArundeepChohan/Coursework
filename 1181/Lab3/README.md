@@ -14,8 +14,11 @@ A project for CPSC 1181 used to add, find, add quiz scores or delete students fr
 My Roles:
 
 Java documentation.
+
 Input user commands from the keyboard and outputs proper information.
+
 General math skills.
+
 Multiple programs infused to form a bigger program(Object oriented programming).
 
 
