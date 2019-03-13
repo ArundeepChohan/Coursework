@@ -1,4 +1,5 @@
 ![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/Chess.jpg)
+
 Chess Program: 
 
 A project for CPSC 1181 which the user has to make a 2d Chess board with Chess rules implemented using Java based coding.
