@@ -10,7 +10,7 @@ Anything that can run an Html page.
 Change the ahref links to point to your own folder.
 
 Built With:
-Javascript, CSS and Bootstrap - Front end.
+HTML, Javascript, CSS and Bootstrap - Front end.
 API - Google Map.
 
 Authors:
