@@ -1,7 +1,7 @@
 ![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/MolonLabeWebpage.png)
 
 Molon Labe: 
-A website for my favorite game Dust514 where I used to run corporation battles in Eve Online showcasing out team motton and members.
+A website for my favorite game Dust514 where I used to run corporation battles in Eve Online showcasing our team motto and members. As well as our glorious fights for resources as the corporation Molon Labe.
 
 Prerequisites:
 Able to run HTML pages.
