@@ -2,6 +2,8 @@
 
 RockPaperScissors Program: 
 
+Randomly generated computer choices for a Rock, Paper, Scissors game.
+
 Prerequisites:
 Able to run Html pages.
 
