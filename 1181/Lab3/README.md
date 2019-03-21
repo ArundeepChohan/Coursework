@@ -1,4 +1,4 @@
-![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/CollegeProgram.png)
+![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/CollegeProgram.jpg)
 
 College:
 
