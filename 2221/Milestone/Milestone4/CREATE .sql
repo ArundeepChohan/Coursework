@@ -1,5 +1,6 @@
 CREATE TABLE Server
-( serverName VARCHAR(20) NOT NULL,
+( 
+ serverName VARCHAR(20) NOT NULL,
  timeZone VARCHAR(20) NOT NULL,
  worldBoss VARCHAR(20) NOT NULL,
  numberOfPlayers VARCHAR(3) NOT NULL,
@@ -7,7 +8,8 @@ CREATE TABLE Server
  PRIMARY KEY (serverName)
 );
 CREATE TABLE Region
-( areaId NUMERIC(2) NOT NULL,
+( 
+ areaId NUMERIC(2) NOT NULL,
  RegionName VARCHAR(20) NOT NULL,
  HostLocation VARCHAR(20)NOT NULL,
  PRIMARY KEY (areaId)
@@ -20,7 +22,6 @@ CREATE TABLE Department
  NoOfEmployee NUMERIC(10) NOT NULL,
  departmentEmail VARCHAR(20), 
  PRIMARY KEY (departmentId)
-
 );
 CREATE TABLE StaffPersonal
 (
@@ -40,7 +41,6 @@ CREATE TABLE PlayerPersonal
  Birthday VARCHAR(10) NOT NULL,
  PRIMARY KEY (PlayerEmail)
 );
-
 CREATE TABLE Player
 ( 
  PlayerID NUMERIC(4) NOT NULL,
@@ -51,17 +51,16 @@ CREATE TABLE Player
  PRIMARY KEY (PlayerID),
  FOREIGN KEY (PlayerEmail) REFERENCES PlayerPersonal(PlayerEmail)
 );
-
-
 CREATE TABLE PlaysIn
-( playerId NUMERIC(4) NOT NULL,
+( 
+ playerId NUMERIC(4) NOT NULL,
  serverName VARCHAR(20) NOT NULL,
  FOREIGN KEY (playerId) REFERENCES Player(playerId),
  FOREIGN KEY (serverName) REFERENCES Server(serverName)
 );
-
 CREATE TABLE LocatedIn
-( areaId NUMERIC(2) NOT NULL,
+( 
+ areaId NUMERIC(2) NOT NULL,
  ServerName VARCHAR(20) NOT NULL,
  FOREIGN KEY (areaId) REFERENCES Region(areaId),
  FOREIGN KEY (serverName) REFERENCES Server(serverName)
@@ -83,10 +82,9 @@ CREATE TABLE Staff
  FOREIGN KEY (serverName) REFERENCES Server(serverName)
 );
 CREATE TABLE Supervise
-( staffId NUMERIC(4) NOT NULL,
+( 
+ staffId NUMERIC(4) NOT NULL,
  superviseStaffId NUMERIC(4) NOT NULL,
  FOREIGN KEY (staffId) REFERENCES staff(staffSSN),
  FOREIGN KEY (superviseStaffId) REFERENCES Staff(staffSSN)
 );
-
-
