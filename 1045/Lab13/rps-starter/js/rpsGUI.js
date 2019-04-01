@@ -24,7 +24,6 @@ var userScore=document.getElementById('human-wins');
 var computerScore=document.getElementById('computer-wins');
 var tieGame=document.getElementById('tie-games');
 
-
 var rockImage = document.getElementById('rock-image').src;
 var paperImage = document.getElementById('paper-image').src;
 var scissorImage = document.getElementById('scissors-image').src;
@@ -36,47 +35,44 @@ var messageElement = document.getElementById('message');
 function sendMessage(newMessage) {
 	messageElement.innerHTML = newMessage;
 }
+
 function showUserThrow( symbol )         //- set the user's throw image
 {
-if(symbol == 'rock')
-{
-userThrow.src= rockImage;
+	if(symbol == 'rock')
+	{
+	userThrow.src= rockImage;
+	}
+	else if(symbol == 'paper')
+	{
+	userThrow.src= paperImage;
+	}
+	else if(symbol == 'scissors')
+	{
+	userThrow.src= scissorImage;
+	}
 }
-else if(symbol == 'paper')
-{
-userThrow.src= paperImage;
-}
-else if(symbol == 'scissors')
-{
-userThrow.src= scissorImage;
-}
-}
+
 function showCompThrow( symbol )        // - set the computer's throw image
 {
-
-if(symbol == 'rock')
-{
-computerThrow.src= rockImage;
-}
-else if(symbol == 'paper')
-{
-computerThrow.src= paperImage;
-}
-else if(symbol == 'scissors')
-{
-computerThrow.src= scissorImage;
-}
-
+	if(symbol == 'rock')
+	{
+	computerThrow.src= rockImage;
+	}
+	else if(symbol == 'paper')
+	{
+	computerThrow.src= paperImage;
+	}
+	else if(symbol == 'scissors')
+	{
+	computerThrow.src= scissorImage;
+	}
 }
 
 function updateScoreboard( win, lose, tie ) //- update the 3 scores on the scoreboard.
 {
-
-	
 	userScore.innerHTML = win;
 	computerScore.innerHTML = lose;
 	tieGame.innerHTML = tie;
-	
 }
 
 /* TRY IT:  
