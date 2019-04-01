@@ -20,8 +20,8 @@ Score = {  // This is an OBJECT!!  It defines 3 varialbes:  Score.wins, Score.ti
 */
 // If you prefer, you may convert the above into 3 separate global varialbes using var statements.
 var wins= 0;
-var	ties= 0;
-var	loses= 0;
+var ties= 0;
+var loses= 0;
 
 // Here are some of the MODEL algorithms from Lab 10 to get us started.
 function getComputerThrow() {
@@ -55,16 +55,16 @@ function scoreMatch( userThrow, computerThrow ) {
 	var outcome = rpsCompare( userThrow, computerThrow );
 
 	if (outcome === "win") {
-	  wins++;
+	  	wins++;
 		return  "Winner! " + userThrow + " beats " + computerThrow;
 	
 	}
 	else if (outcome === "lose") {
-	  loses++;
+	  	loses++;
 		return   "Loser! " + computerThrow + " beats " + userThrow;
 	}
 	else {
-	  ties++;
+	  	ties++;
 		return  "Tie! Both threw " + userThrow;
 	}
 }
@@ -82,7 +82,7 @@ function scoreMatch( userThrow, computerThrow ) {
 // For example, here is a controller for the main game algorithm -- see how it coordinates the model and view compontents, but doesn't do much workd itself!
 function playOneRound( usersThrow ) 
 {
-  var computersThrow = getComputerThrow();
+  	var computersThrow = getComputerThrow();
 	var message = scoreMatch( usersThrow, computersThrow );
 	sendMessage( message );
 	showUserThrow( usersThrow );
@@ -108,12 +108,9 @@ function playOneRound( usersThrow )
  *   -- load the page and in the console, type:  playOneRound('rock');
  *   -- after doing this a few times, type Score to see the current state of the scoreboard.
  */
-
-
 // Code your event handler(s) here -- respond to button clicks by calling playOneRound()
-
 function buttonClickListener(event) {
-  var element = event.target;
+	var element = event.target;
  	
 	if(element.alt=='ROCK')
 	{
@@ -130,9 +127,8 @@ function buttonClickListener(event) {
 	
 	playOneRound('paper');
 	}
-console.log(element.alt);
+ console.log(element.alt);
 }
-
 
 // Finally, configure the RPS "controls" to call your event handler...
 function startRPS(event) {
