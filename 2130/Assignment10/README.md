@@ -1,8 +1,8 @@
+# Torva Platebody from Runescape & Canucks logo   
+
 ![Screenshot](https://github.com/achohan01/Summary/blob/master/TorvaPlatebody.png)
 
 ![Screenshot](https://github.com/achohan01/Summary/blob/master/Canucks.png)
-
-Torva Platebody from Runescape & Canucks logo :  
 
 A project for CPSC 2130 which uses Blender along with various textures to create a 3d object.
 
