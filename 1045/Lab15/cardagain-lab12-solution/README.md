@@ -1,6 +1,6 @@
-![Screenshot](https://github.com/achohan01/Summary/blob/master/CardAgain.png)
+# Card again
 
-Card Again :  
+![Screenshot](https://github.com/achohan01/Summary/blob/master/CardAgain.png)
 
 Flips a card and deals.
 
