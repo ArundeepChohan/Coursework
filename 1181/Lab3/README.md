@@ -1,6 +1,6 @@
-![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/CollegeProgram.jpg)
+# College
 
-College:
+![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/CollegeProgram.jpg)
 
 A project for CPSC 1181 used to add, find, add quiz scores or delete students from/to a database.
 
