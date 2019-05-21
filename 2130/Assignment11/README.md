@@ -1,8 +1,8 @@
+# Lighthouse & Centario Image
+
 ![Screenshot](https://github.com/achohan01/Summary/blob/master/LandscapeImage.png)
 
 ![Screenshot](https://github.com/achohan01/Summary/blob/master/Centario.png)
-
-Lighthouse & Centario Image: 
 
 A project for CPSC 2130 which uses Blender along with various textures to create a 3d object.
 
