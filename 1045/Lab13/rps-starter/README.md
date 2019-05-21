@@ -1,6 +1,6 @@
-![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/RockPaperScissors.png)
+# Rock, Paper, Scissors
 
-RockPaperScissors Program: 
+![Screenshot](https://github.com/ArundeepChohan/Summary/blob/master/RockPaperScissors.png)
 
 Randomly generated computer choices for a Rock, Paper, Scissors game.
 
