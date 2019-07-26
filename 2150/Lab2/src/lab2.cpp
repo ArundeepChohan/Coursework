@@ -10,13 +10,13 @@ int moves=0;
 void Honoi(int n, char source, char destination, char tmp) {
      if (n == 1) // Stopping condition
      {
-          cout << "Move from " << source << " to " << destination << endl;
-          moves++;
+           cout << "Move from " << source << " to " << destination << endl;
+           moves++;
      }
      else {
-            Honoi (n - 1, source, tmp, destination);
-            Honoi (1, source, destination, tmp);
-            Honoi (n - 1, tmp, destination, source);
+           Honoi (n - 1, source, tmp, destination);
+           Honoi (1, source, destination, tmp);
+           Honoi (n - 1, tmp, destination, source);
       }
 }
 //Moves n disks from source to destination with tmp
@@ -29,11 +29,11 @@ void semiHonoi(int n, char even, char odd, char tmp) {
     	 }
     	 else
     	 {
-    		semiHonoi (n-2,even,odd,tmp);
-            Honoi (n-2, tmp,odd,even);
-            cout << "Move from " << even<<" to " << tmp << endl;
-            moves++;
-            Honoi(n-1,odd,tmp,even);
+    		 semiHonoi (n-2,even,odd,tmp);
+           Honoi (n-2, tmp,odd,even);
+           cout << "Move from " << even<<" to " << tmp << endl;
+           moves++;
+           Honoi(n-1,odd,tmp,even);
     	}
 }
 int main() {
