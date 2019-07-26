@@ -30,10 +30,10 @@ void semiHonoi(int n, char even, char odd, char tmp) {
     	 else
     	 {
     		semiHonoi (n-2,even,odd,tmp);
-          Honoi (n-2, tmp,odd,even);
-          cout << "Move from " << even<<" to " << tmp << endl;
-          moves++;
-          Honoi(n-1,odd,tmp,even);
+            Honoi (n-2, tmp,odd,even);
+            cout << "Move from " << even<<" to " << tmp << endl;
+            moves++;
+            Honoi(n-1,odd,tmp,even);
     	}
 }
 int main() {
