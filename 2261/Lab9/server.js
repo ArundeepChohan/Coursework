@@ -53,10 +53,4 @@ app.delete('/profile/:profile_id', function (req, res) {
     	}
 	});
 
-});
-
-	
-	
-	
-	
-	
+});	
