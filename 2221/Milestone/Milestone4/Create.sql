@@ -15,7 +15,8 @@ CREATE TABLE Region
  PRIMARY KEY (areaId)
 );
 CREATE TABLE Department
-( departmentId NUMERIC(4) NOT NULL,
+( 
+ departmentId NUMERIC(4) NOT NULL,
  departmentName VARCHAR(20) NOT NULL,
  departmentAddress VARCHAR(30) NOT NULL,
  departmentPhoneNo VARCHAR(20) NOT NULL,
