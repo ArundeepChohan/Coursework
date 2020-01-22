@@ -4,6 +4,10 @@
 
 A project for CPSC 2130 which uses Javascript, HTML5, CSS3 to create a functional game.
 
+• A game where you hold down the mouse button to fire a Pokeball at the Pokemon. 
+
+• Bounding box collisions and an animated tail using setInterval to update the image and the Pokeball.
+
 Prerequisites:
 Able to run HTML pages.
 
